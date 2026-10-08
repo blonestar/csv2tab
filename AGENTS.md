@@ -27,3 +27,18 @@ Pravila:
 - Podizanje verzije ide u **poseban commit** na kraju grane, npr. `Verzija 0.2.0`.
 - Git tag (`v0.2.0`) se pravi tek posle merge-a u `main` i samo na zahtev korisnika.
 - U završnoj poruci korisniku navedi staru i novu verziju i zašto je izabran baš taj nivo.
+
+## Pull request i merge
+
+Posle otvaranja PR-a agent ga **sam mergeuje** u `main` kad provere prođu, bez posebnog zahteva korisnika.
+GitHub-ov ugrađeni auto-merge ne radi u ovom repou (privatan repo na besplatnom planu nema branch protection),
+pa agent sam čeka provere:
+
+1. `gh pr checks <broj> --watch --fail-fast` — čeka da se završe sve provere (Vercel build i preview).
+2. Ako su sve prošle: `gh pr merge <broj> --merge --delete-branch`, pa lokalno `git switch main && git pull`.
+3. Ako neka provera padne ili PR ima konflikt: **ne mergeuje**. Javi korisniku šta je palo (sa linkom) i predloži
+   ispravku.
+
+- Merge commit (`--merge`), ne squash/rebase: istorija grana ostaje vidljiva, kao u dosadašnjim PR-ovima.
+- Ne mergeuje se ako korisnik kaže da PR treba da sačeka (pregled, testiranje) ili ako je PR draft.
+- U završnoj poruci navedi link PR-a i da je mergeovan (ili zašto nije).
