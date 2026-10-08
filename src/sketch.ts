@@ -110,9 +110,11 @@ function draw(el: HTMLElement) {
   }
   nodes.forEach((n) => svg.appendChild(n));
   prepare(svg);
+  if (kind === 'drop') svg.classList.add('dashed');
   if (!drawn.has(el)) {
     drawn.add(el);
     svg.classList.add('draw');
+    setTimeout(() => svg.classList.remove('draw'), 1600); // kasniji redraw (resize) ne sme da ponovo animira
   }
 }
 

@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="description" content="csv2tab pretvara CSV i ODS u tab-delimited (.tab / .tsv) fajl. Sve se obrađuje u vašem browseru." />
-    <title>csv2tab — CSV / ODS u TAB</title>
+    <meta name="description" content="csv2tab pretvara CSV i ODS krojne liste u binarni WT Input .tab (uz sporedni TSV izvoz). Sve se obrađuje u vašem browseru." />
+    <title>csv2tab — CSV / ODS u WT Input .tab</title>
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M5 4h16l6 6v18H5z' fill='%23fff6c9' stroke='%23333' stroke-width='2' stroke-linejoin='round'/%3E%3Cpath d='M9 15h14M9 20h14M9 25h9' stroke='%23333' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E" />
   </head>
   <body>
@@ -17,10 +17,10 @@
     </svg>
     <header class="top">
       <h1 class="title">csv2tab</h1>
-      <svg id="flow" class="flow" viewBox="0 0 640 160" role="img" aria-label="Skica: CSV i ODS fajl se pretvaraju u TAB fajl"></svg>
+      <svg id="flow" class="flow" viewBox="0 0 640 160" role="img" aria-label="Skica: CSV i ODS fajl se pretvaraju u WT Input TAB fajl"></svg>
       <p class="privacy" data-rough="box">
         <svg class="icon" data-icon="lock" width="28" height="28" viewBox="0 0 28 28"></svg>
-        <span>Pretvara <b>CSV</b> i <b>ODS</b> u <b>tab-delimited</b> fajl. Obrada je potpuno u vašem browseru
+        <span>Pretvara <b>CSV</b> i <b>ODS</b> (export krojne liste) u binarni <b>WT Input .tab</b>. Obrada je potpuno u vašem browseru
         — fajl nikad ne napušta vaš računar.</span>
       </p>
     </header>
@@ -31,7 +31,7 @@
         <div id="dropzone" class="dropzone" data-rough="drop" tabindex="0" role="button" aria-label="Izaberite ili prevucite fajlove">
           <p><strong>Prevucite fajlove ovde</strong> ili</p>
           <button type="button" id="pick" class="btn primary" data-rough="btn">Izaberite fajlove</button>
-          <p class="hint">Podržano: .csv, .txt, .ods</p>
+          <p class="hint">Podržano: .csv, .txt, .ods (krojna lista) i .tab (samo pregled / izmena)</p>
           <input id="file-input" type="file" accept=".csv,.txt,.tsv,.tab,.ods" multiple hidden />
         </div>
         <ul id="file-list" class="file-list" hidden></ul>
@@ -39,7 +39,7 @@
 
       <div id="workspace" hidden>
         <div class="grid">
-          <section class="card" id="detect" data-rough="box">
+          <section class="card src-only" id="detect" data-rough="box">
             <h2><span class="step">2</span> Detekcija</h2>
             <p id="detect-info" class="muted"></p>
             <div class="fields">
@@ -53,10 +53,87 @@
                 <select id="sel-sheet"></select>
               </label>
             </div>
+            <div id="mapping"></div>
           </section>
 
-          <section class="card" id="clean" data-rough="box">
-            <h2><span class="step">3</span> Čišćenje</h2>
+          <section class="card src-only" id="convert" data-rough="box">
+            <h2><span class="step">3</span> Konverzija</h2>
+            <div class="checks">
+              <label><input type="checkbox" id="c-merge" checked /> Spoji iste delove (količine se sabiraju)</label>
+            </div>
+            <p class="muted" style="margin:10px 0 2px">Smer vlakna po materijalu (označeno = prati vlakno / dezen):</p>
+            <div id="grain-list" class="grain-list"></div>
+            <details id="edge-details">
+              <summary>Tabela šifara kantovanja</summary>
+              <p class="muted">Šifra = redni broj tipa kantovanja u WT Input-u za par stranica (debljine u mm, 0 = bez kanta). Čuva se u ovom browseru.</p>
+              <div id="edge-table"></div>
+              <div class="actions" style="margin-top:6px">
+                <button type="button" id="edge-add" class="btn small" data-rough="btn">+ red</button>
+                <button type="button" id="edge-reset" class="btn small" data-rough="btn">Vrati podrazumevano</button>
+              </div>
+            </details>
+          </section>
+
+          <section class="card" id="export" data-rough="box">
+            <h2><span class="step" id="export-step">4</span> Izvoz .tab</h2>
+            <div class="fields">
+              <label>Izlaz
+                <select id="x-mode">
+                  <option value="all">Jedan zajednički .tab</option>
+                  <option value="per">Poseban .tab po materijalu</option>
+                </select>
+              </label>
+            </div>
+            <div class="actions">
+              <button type="button" id="btn-tab" class="btn primary" data-rough="btn">Preuzmi .tab</button>
+              <button type="button" id="btn-cmp" class="btn" data-rough="btn">Uporedi sa postojećim .tab…</button>
+              <input id="cmp-input" type="file" accept=".tab" hidden />
+            </div>
+            <div class="wt-pick">
+              <p class="muted" style="margin:10px 0 4px">WT prepoznaje materijal po <b>imenu fajla</b> (npr. <code>H1137 18 mm ABS</code>). Izaberite materijal i traku iz kataloga:</p>
+              <div id="wt-mat-rows" class="map-grid" style="grid-template-columns:1fr"></div>
+              <datalist id="wt-mats"></datalist>
+              <div class="fields">
+                <label>Traka (ABS / PVC…)
+                  <select id="wt-band"></select>
+                </label>
+              </div>
+              <div class="fields">
+                <label>Ime fajla (bez .tab)
+                  <input id="x-fname" type="text" spellcheck="false" />
+                </label>
+              </div>
+            </div>
+            <p id="export-status" class="muted" role="status"></p>
+          </section>
+        </div>
+
+        <section class="card warn-card" id="warnings-card" data-rough="box" hidden>
+          <h2>Upozorenja</h2>
+          <ul id="warnings" class="warnings"></ul>
+        </section>
+
+        <section class="card" data-rough="box">
+          <div id="tabs" class="tabs"></div>
+          <div id="panel-parts"></div>
+          <div id="panel-src" hidden>
+            <p id="preview-info" class="muted"></p>
+            <div class="legend">
+              <span data-rough="chip" class="chip chg">promenjeno čišćenjem (TSV)</span>
+              <span data-rough="chip" class="chip w-tab">tab / novi red</span>
+              <span data-rough="chip" class="chip w-dec">decimalni zarez</span>
+              <span data-rough="chip" class="chip w-sus">sumnjiv znak</span>
+              <span data-rough="chip" class="chip rag">drugačiji broj kolona</span>
+            </div>
+            <div id="table-wrap" class="table-wrap"></div>
+          </div>
+          <div id="panel-diff" hidden></div>
+        </section>
+
+        <details class="card src-only" id="tsv-card" data-rough="box">
+          <summary>Sporedni izvoz: TSV / tekst (generički)</summary>
+          <div id="clean">
+            <h2 style="font-size:24px">Čišćenje</h2>
             <div class="checks">
               <label><input type="checkbox" id="o-ws" /> Tab / novi red unutar ćelije → razmak</label>
               <label><input type="checkbox" id="o-dec" /> Decimalni zarez → tačka (<code>1.234,56</code> → <code>1234.56</code>)</label>
@@ -71,60 +148,38 @@
               <label><input type="checkbox" id="o-moji" /> Popravi mojibake (npr. <code>Ä‡</code> → <code>ć</code>)</label>
               <label><input type="checkbox" id="o-erows" /> Obriši potpuno prazne redove</label>
               <label><input type="checkbox" id="o-ecols" /> Obriši potpuno prazne kolone</label>
-              <label><input type="checkbox" id="o-sel" /> Čisti samo izabrane kolone <span class="muted">(označite ih u zaglavlju tabele)</span></label>
+              <label><input type="checkbox" id="o-sel" /> Čisti samo izabrane kolone <span class="muted">(označite ih u zaglavlju tabele „Izvor")</span></label>
             </div>
-          </section>
-
-          <section class="card" id="export" data-rough="box">
-            <h2><span class="step">4</span> Izvoz</h2>
-            <div class="fields">
-              <label>Ekstenzija
-                <select id="x-ext">
-                  <option value=".tab">.tab</option>
-                  <option value=".tsv">.tsv</option>
-                  <option value=".txt">.txt</option>
-                </select>
-              </label>
-              <label>Kodiranje
-                <select id="x-enc">
-                  <option value="utf-8">UTF-8</option>
-                  <option value="utf-8-bom">UTF-8 sa BOM-om (Excel)</option>
-                  <option value="windows-1250">windows-1250</option>
-                </select>
-              </label>
-              <label>Kraj reda
-                <select id="x-eol">
-                  <option value="lf">LF (Linux / macOS)</option>
-                  <option value="crlf">CRLF (Windows)</option>
-                </select>
-              </label>
-            </div>
-            <div class="actions">
-              <button type="button" id="btn-download" class="btn primary" data-rough="btn">Preuzmi .tab</button>
-              <button type="button" id="btn-all" class="btn" data-rough="btn" hidden>Preuzmi sve listove (ZIP)</button>
-              <button type="button" id="btn-copy" class="btn" data-rough="btn">Kopiraj u clipboard</button>
-            </div>
-            <p id="export-status" class="muted" role="status"></p>
-          </section>
-        </div>
-
-        <section class="card warn-card" id="warnings-card" data-rough="box" hidden>
-          <h2>Upozorenja</h2>
-          <ul id="warnings" class="warnings"></ul>
-        </section>
-
-        <section class="card" data-rough="box">
-          <h2>Pregled</h2>
-          <p id="preview-info" class="muted"></p>
-          <div class="legend">
-            <span data-rough="chip" class="chip chg">promenjeno čišćenjem</span>
-            <span data-rough="chip" class="chip w-tab">tab / novi red</span>
-            <span data-rough="chip" class="chip w-dec">decimalni zarez</span>
-            <span data-rough="chip" class="chip w-sus">sumnjiv znak</span>
-            <span data-rough="chip" class="chip rag">drugačiji broj kolona</span>
           </div>
-          <div id="table-wrap" class="table-wrap"></div>
-        </section>
+          <div class="fields" style="margin-top:12px">
+            <label>Ekstenzija
+              <select id="x-ext">
+                <option value=".tsv">.tsv</option>
+                <option value=".tab">.tab (tekstualni)</option>
+                <option value=".txt">.txt</option>
+              </select>
+            </label>
+            <label>Kodiranje
+              <select id="x-enc">
+                <option value="utf-8">UTF-8</option>
+                <option value="utf-8-bom">UTF-8 sa BOM-om (Excel)</option>
+                <option value="windows-1250">windows-1250</option>
+              </select>
+            </label>
+            <label>Kraj reda
+              <select id="x-eol">
+                <option value="lf">LF (Linux / macOS)</option>
+                <option value="crlf">CRLF (Windows)</option>
+              </select>
+            </label>
+          </div>
+          <div class="actions">
+            <button type="button" id="btn-download" class="btn" data-rough="btn">Preuzmi TSV</button>
+            <button type="button" id="btn-all" class="btn" data-rough="btn" hidden>Preuzmi sve listove (ZIP)</button>
+            <button type="button" id="btn-copy" class="btn" data-rough="btn">Kopiraj u clipboard</button>
+          </div>
+          <p id="tsv-status" class="muted" role="status"></p>
+        </details>
       </div>
     </main>
 

@@ -96,13 +96,13 @@ U702;2436,0 mm;40,0 mm;1;18,0 mm;NIK_HOL_maska;U702_22-1_kant (1,0 mm x 19,0 mm)
 
 ## Konverzija CSV → zapis
 - dim1 = Length, dim2 = Width (zaokružiti na ceo mm; upozoriti ako nije ceo broj). Dugme po redu „zameni dimenzije" (zameni i šifre kanta).
-- Šifra kanta po paru stranica = **redni broj tipa kantovanja u WT Input-u**. Kombinacija debljina (neuređen par) → šifra, preko **tabele koja se može menjati u UI-ju** (čuva se u localStorage, dugme „vrati podrazumevano"). Podrazumevano (zaključeno iz primera; 0, 2, 4, 5 sigurni, 1 i 3 pretpostavka):
-  - nema kanta → 0
-  - jedna stranica 1 mm → 1 (?)
-  - obe 0,5 mm → 2
-  - jedna stranica 0,5 mm → 3 (?)
-  - obe 1 mm → 4
-  - 1 mm + 0,5 mm → 5
+- Šifra kanta po paru stranica = **redni broj tipa kantovanja u WT Input-u**. Kombinacija debljina (neuređen par) → šifra, preko **tabele koja se može menjati u UI-ju** (čuva se u localStorage, dugme „vrati podrazumevano"). Podrazumevano (potvrđeno iz WT Input padajuće liste kantovanja; ≤0,5 mm = PVC, ≥1 mm = ABS):
+  - 0 = Bez kantovanja
+  - 1 = Jednostrano (jedna stranica PVC 0,5 mm)
+  - 2 = Dvostrano (obe 0,5 mm)
+  - 3 = Jednostrano ABS trakom (jedna stranica 1 mm)
+  - 4 = Dvostrano ABS trakom (obe 1 mm)
+  - 5 = 1: PVC + 1: ABS (0,5 mm + 1 mm)
   - Nepoznata debljina → upozorenje u preview-u.
 - Smer vlakna: po materijalu (lista materijala iz fajla sa checkbox-om); podrazumevano 0 za materijale koji liče na jednobojne (`^U\d+`), 1 za ostale. Može se menjati i po redu.
 - **Spajanje istih delova** (podrazumevano uključeno): redovi sa istim (dim1, dim2, šifra1, šifra2, smer) → jedan zapis, količine se sabiraju, zadržava se prvi naziv. Primer: Kašmir CSV 18 redova → 14 zapisa (poklapa se sa ručno pravljenim .tab).
@@ -115,3 +115,5 @@ U702;2436,0 mm;40,0 mm;1;18,0 mm;NIK_HOL_maska;U702_22-1_kant (1,0 mm x 19,0 mm)
 - Opcija i da se otvori postojeći `.tab` samo radi pregleda.
 - Export: binarni `.tab` (Blob, `application/octet-stream`). Opcioni TSV/CSV export ostaje kao sporedna opcija.
 - Generičke TSV opcije iz gornjeg dela (izlazno kodiranje, CRLF…) važe samo za sporedni TSV export.
+
+- Napomene iz WT Input-a: dimenzije se u WT-u prikazuju u cm sa jednom decimalom, a u fajlu su celobrojni mm. Kolone u WT-u: RB., DUŽINA, ŠIRINA, OZNAKA, POV, T, P, KOM; smer vlakna = „Prati teksturu". Bajt 20 zaglavlja je konstanta 3 (materijal se NE čuva u .tab-u: WT ga prepoznaje po imenu fajla, npr. „H1137 18 mm ABS"; katalog materijala u `src/data/wt-catalog.json`). „Dužina" je dimenzija koja prati teksturu.

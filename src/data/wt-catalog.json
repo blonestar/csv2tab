@@ -1,0 +1,8647 @@
+{
+"source": "WT Input wt.zip (Table.T01, KTraka.T01), hobby-system.com",
+"materials": [
+{
+"name": "BELA TEKSTURA 103 ME3  280",
+"code": "103-ME3",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "BELA TEKSTURA 103 ME3/25",
+"code": "103-ME3/25",
+"sheet": [
+2800,
+2070
+],
+"thickness": 25.0,
+"grain": 1
+},
+{
+"name": "BELA KORA 103 MS",
+"code": "103-MS2",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "BELA GLAT 103 SM",
+"code": "103-SM",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "BELA 105 GLAT FS01",
+"code": "105-FS01",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "BELA 105 KORA FS02",
+"code": "105-FS02",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "BELA TEKSTURA 105 FS22",
+"code": "105-FS22",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "LEDENO BELA 107 FS 15",
+"code": "107-FS15",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "BELA  80 GRAMA 116",
+"code": "116-/18",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "FALCO 116/10",
+"code": "116/10",
+"sheet": [
+2800,
+2070
+],
+"thickness": 10.0,
+"grain": 0
+},
+{
+"name": "BELA 116/16",
+"code": "116/16",
+"sheet": [
+2800,
+2070
+],
+"thickness": 16.0,
+"grain": 0
+},
+{
+"name": "HLADNO BELA 121 KORA FS 15",
+"code": "121-FS15",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "HLADNO BELA 121 GLAT SM",
+"code": "121-SM",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "CRNA TOP MAT 1955",
+"code": "1955",
+"sheet": [
+2800,
+1220
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "CRNA TOP MAT 200FS08",
+"code": "200-FSO8",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "CRNA TEKSTURA 200ME3",
+"code": "200-ME3",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "CRNA KORA 200MS",
+"code": "200-MS",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "CRNA KORA 200MS/25MM",
+"code": "200-MS/25",
+"sheet": [
+2800,
+2070
+],
+"thickness": 25.0,
+"grain": 0
+},
+{
+"name": "BENETON CRVENA 210",
+"code": "210-MS2",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "BENETON PLAVA 213",
+"code": "213-MS2",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "BENETON ORANŽ 215",
+"code": "215-MS2",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "BENETON BORDO 216",
+"code": "216-MS2",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "BENETON PISTACIA 219",
+"code": "219-MS2",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "MAKIJATO 223 FS08",
+"code": "223-FS08",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "ROZA 240 FS08",
+"code": "240-FS08",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "SENF 241 FS 08",
+"code": "241-FS08",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "ZUTA 242 FS15",
+"code": "242-FS15",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "PETROL 244 FALCO",
+"code": "244-FAL",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "PACIFIK 245 FS08",
+"code": "245-FS08",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "SIENA 247 FS08",
+"code": "247-",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "ANTRACIT  271 FS 02",
+"code": "271-FS02",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "ANTRACIT MAT 271 FS 08",
+"code": "271-FS08",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "ANTRACIT TEXTURA 271 FS 22",
+"code": "271-FS22",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "ANTRACIT 271/25 FS02",
+"code": "271/25",
+"sheet": [
+2800,
+2070
+],
+"thickness": 25.0,
+"grain": 0
+},
+{
+"name": "UNIMETALIC BRAON 300 FS 15",
+"code": "300-FS15",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "KAPUCINO 301",
+"code": "301-FALCO",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "ALUMINIJ 304",
+"code": "304-MS2",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "ALUMINIJ 304/ 16",
+"code": "304/16",
+"sheet": [
+2800,
+2070
+],
+"thickness": 16.0,
+"grain": 0
+},
+{
+"name": "ALUMINIJUM 304/25",
+"code": "304/25",
+"sheet": [
+2650,
+2070
+],
+"thickness": 25.0,
+"grain": 0
+},
+{
+"name": "ŽUTA PASTEL 307",
+"code": "307-MS2",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "SIVA  314",
+"code": "314-MS2",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "SIVA 314/25",
+"code": "314/25",
+"sheet": [
+2800,
+2070
+],
+"thickness": 25.0,
+"grain": 0
+},
+{
+"name": "SIVA SKRILJAC 318",
+"code": "318",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "GOBI ŠARGAŠ 329",
+"code": "329-MS2",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "GOBI 344",
+"code": "344-MS2",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "345 SIVA FS 02",
+"code": "345-MS2",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "KREM BELA 348    280",
+"code": "348-MS2",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "HRAST VELINGTON",
+"code": "370-SWN",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "BUKVA SAVARIA 401  280",
+"code": "401/18",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "BUKVA SAVARIA 401/25MM 280",
+"code": "401/28",
+"sheet": [
+2800,
+2070
+],
+"thickness": 25.0,
+"grain": 1
+},
+{
+"name": "TREŠNJA KALIFOR.403/28",
+"code": "403/28",
+"sheet": [
+2800,
+2070
+],
+"thickness": 28.0,
+"grain": 1
+},
+{
+"name": "TREŠNJA SVETLA 404",
+"code": "404-ME4",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST MODERNI 408",
+"code": "408-TM",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "BOR TAMNI 410   280",
+"code": "410-ME4",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST KANADSKI 415 280",
+"code": "415-ME4",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "VENGE 417  280",
+"code": "417-MS4",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "JASEN VANKUVER 418/25MM",
+"code": "418/25",
+"sheet": [
+2800,
+2070
+],
+"thickness": 25.0,
+"grain": 1
+},
+{
+"name": "JASEN VANKUVER 418/28MM",
+"code": "418/28",
+"sheet": [
+2800,
+2070
+],
+"thickness": 28.0,
+"grain": 1
+},
+{
+"name": "BOR SVETLI 419",
+"code": "419-ME4",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "LESNIK 422",
+"code": "422-FS15",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "MAHAGONI CRVENI 428/28",
+"code": "428/28",
+"sheet": [
+2800,
+2070
+],
+"thickness": 28.0,
+"grain": 1
+},
+{
+"name": "BUKVA SVETLA 438",
+"code": "438/18",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "BUKVA SVETLA 438/28MM 280",
+"code": "438/28",
+"sheet": [
+2800,
+2070
+],
+"thickness": 28.0,
+"grain": 1
+},
+{
+"name": "JASEN SREBRNI 439",
+"code": "439-ME4",
+"sheet": [
+2650,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "SNEŽNI JASEN 440/28MM",
+"code": "440/28",
+"sheet": [
+2800,
+2070
+],
+"thickness": 28.0,
+"grain": 1
+},
+{
+"name": "HRAST LUŽANI 441",
+"code": "441-ME4",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "TREŠNJA  442",
+"code": "442-ME4",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "ORAH EXTRA 459",
+"code": "459",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "BUKVA PARENA 462",
+"code": "462/18",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "JAVOR EVROPSKI 463 280",
+"code": "463-ME4",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "JAVOR EVROPSKI 463/25",
+"code": "463/25",
+"sheet": [
+2800,
+2070
+],
+"thickness": 25.0,
+"grain": 1
+},
+{
+"name": "JABUKA SVETLA 467",
+"code": "467",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "JABUKA ITALIJANO 468",
+"code": "468",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "KALVADOS 489",
+"code": "489-MS4",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "ORAH LYON 508 FS15",
+"code": "508-FS15",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "ORAH ANTIK 512 MS4",
+"code": "512-MS4",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "ARDEN BOR 515 PR",
+"code": "515-PR",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "ARDEN PESAK 516 PR",
+"code": "516-PR",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "ARDEN TAMNI 518 PR",
+"code": "518-PR",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST TOSKANA 520",
+"code": "520-ME4",
+"sheet": [
+2650,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST STARI 524",
+"code": "524-ME4",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "ARDEN PINE MOKA 535  280",
+"code": "535-PR",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "BOR SALBURG 538",
+"code": "538",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "ANTIK BOR 539 FS-22",
+"code": "539-FS22",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "ANTIK BOR 539/28",
+"code": "539/28",
+"sheet": [
+2800,
+2070
+],
+"thickness": 28.0,
+"grain": 1
+},
+{
+"name": "ORAH WINCHESTER 542",
+"code": "542-FS22",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "SLJIVA TAMNA 551",
+"code": "551",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "PRUGNA ROSALES 553 FS15",
+"code": "553-FS15",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "JASEN ZLATNI 570",
+"code": "570-ME4",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "JASEN BAVARIJA 571",
+"code": "571-",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "KOIMBRA 572",
+"code": "572-ME4",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST SONOMA SVETLI 577",
+"code": "577",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST SONOMA BRAON 578",
+"code": "578",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST RECNI 582",
+"code": "582",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST SPANJOLSKI 583",
+"code": "583",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST YORK 584",
+"code": "584",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "COKO SONOMA 586",
+"code": "586",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST COUNTRY 587",
+"code": "587-FS22",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST CANYON 588 FS22",
+"code": "588-FS22",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "BREST LUNA 611 FS22",
+"code": "611-FS22",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST TERMO 612 ST22",
+"code": "612-ST22",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "BISERNA CALOBRA 616 FS08",
+"code": "616-FS08",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "NATUR CALOBRA 617 FS08",
+"code": "617-FS08",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "BUKVA NATUR 618",
+"code": "618-FS08",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "TOBACCO BUKVA 619",
+"code": "619-FS08",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "COLORADO BOR 620",
+"code": "620-FS22",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST CELTIC 621",
+"code": "621-FS22",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "SIVI HRAST SONOMA 622",
+"code": "622",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST MONAKO BELI 623",
+"code": "623-FS22",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST MONAKO KREM 624",
+"code": "624-FS22",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "BELI ARWEN HRAST",
+"code": "627-FS26",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "SIVI ARWEN HRAST 628",
+"code": "628FS26",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "PRIRODNI ARV.HRAST 629",
+"code": "629FS26",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST SIVI FREYA 630",
+"code": "630FS26",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "CRNI FREYA HRAST 631",
+"code": "631-FS26",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EGER 637 FS15",
+"code": "637-FS15",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "ORAH ADMIRAL 640 FS26",
+"code": "640-FS26",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "VIRGINIA KESTEN 641",
+"code": "641-FS26",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST DAKOTA 642 FS24",
+"code": "642-FS26",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "ROVERE BRUGES 65625 G",
+"code": "65625G",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "ARCTIC BOR 663 FS22",
+"code": "663-FS22",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "RAUNA BREST SVETLI 697",
+"code": "697",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "RAUNA BREST TAMNI 698",
+"code": "698",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "TEKSTIL SVETLI 726",
+"code": "726",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "TEKSTIL BEZ 727",
+"code": "727",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "SVETLI BETON 728 FS08",
+"code": "728-FS08",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "TAMNI BETON 729 FS08",
+"code": "729-FS08",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "BAROK HRAST",
+"code": "A-427",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "SHERWOOD HRAST",
+"code": "A-865",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "AGP BELI 1001 V SJAJ",
+"code": "AGP-1001",
+"sheet": [
+2800,
+1220
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "AGP ANTRACIT 1011 SJAJ MDF",
+"code": "AGP-1011",
+"sheet": [
+2800,
+1220
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "AGP SAHARA BELA 622",
+"code": "AGP-622",
+"sheet": [
+2800,
+1220
+],
+"thickness": 19.0,
+"grain": 1
+},
+{
+"name": "MDF EVOGLOS BELA 280*122",
+"code": "AGT",
+"sheet": [
+2800,
+1220
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "MDF EVOGLOS CRNA SJAJ 280*122",
+"code": "AGT-1",
+"sheet": [
+2800,
+1220
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "VERDE P 568 FS 90",
+"code": "AKRI-568",
+"sheet": [
+2800,
+1300
+],
+"thickness": 19.0,
+"grain": 0
+},
+{
+"name": "ANTRACIT BRILIANT",
+"code": "AKRIL-6340",
+"sheet": [
+2800,
+1300
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "AKRIL 522 SAHARA SJAJ",
+"code": "AKRIL522",
+"sheet": [
+2800,
+1300
+],
+"thickness": 19.0,
+"grain": 0
+},
+{
+"name": "BRILLIANT CUBANITE 5338 B",
+"code": "AKRIL5338B",
+"sheet": [
+2800,
+1300
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "AKRIL 6299 COBALT GREJ",
+"code": "AKRIL6299",
+"sheet": [
+2800,
+1300
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "8685 AKRIL BELI",
+"code": "AKRIL8685",
+"sheet": [
+2800,
+1300
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "KRONO ZLATNA",
+"code": "AL-04",
+"sheet": [
+2800,
+1300
+],
+"thickness": 19.0,
+"grain": 1
+},
+{
+"name": "KRONO MDF BAKAR AL-05",
+"code": "AL-05",
+"sheet": [
+2800,
+1300
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "AMBALAZNA / 18 MM",
+"code": "AMB-01",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "AMBALAZNA / 10 MM",
+"code": "AMB-02",
+"sheet": [
+2750,
+2070
+],
+"thickness": 10.0,
+"grain": 0
+},
+{
+"name": "ARCOPA KREM SJAJ 154 HG",
+"code": "ARCOP-154",
+"sheet": [
+2800,
+1220
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "ARCOPA MDF BELI SJAJ 539",
+"code": "ARCOP-539",
+"sheet": [
+2800,
+1220
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "BLAZULJKA 250*125 9MM",
+"code": "BLA-9",
+"sheet": [
+2500,
+1250
+],
+"thickness": 9.0,
+"grain": 0
+},
+{
+"name": "BLAZUJKA 9 MM",
+"code": "BLA09",
+"sheet": [
+2500,
+1250
+],
+"thickness": 9.0,
+"grain": 1
+},
+{
+"name": "BLAZUJKA 10 MM",
+"code": "BLA10",
+"sheet": [
+2500,
+1250
+],
+"thickness": 10.0,
+"grain": 1
+},
+{
+"name": "BLAZUJKA 15 MM",
+"code": "BLA15",
+"sheet": [
+2500,
+1250
+],
+"thickness": 15.0,
+"grain": 1
+},
+{
+"name": "BLAZUJKA 15MM 3050X1520",
+"code": "BLA153200",
+"sheet": [
+3050,
+1520
+],
+"thickness": 15.0,
+"grain": 0
+},
+{
+"name": "BLAZUJKA 18 MM",
+"code": "BLA18",
+"sheet": [
+2500,
+1250
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "BLAZULJKA 21MM",
+"code": "BLA21",
+"sheet": [
+2500,
+1250
+],
+"thickness": 21.0,
+"grain": 1
+},
+{
+"name": "BYSPAN HRAST SANTANA 322 SWN",
+"code": "BYSPAN322",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "BYSPAN 370 SWN HR VELINGTON",
+"code": "BYSPAN370",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "CLEAF SMART BIANCO B011",
+"code": "CLEAF-B011",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "CLEAF MILENIUM B 071",
+"code": "CLEAF-B071",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "CLEAF NADIR SETA FB 09",
+"code": "CLEAF-B09",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "CLEAF PENELOPE FA44",
+"code": "CLEAF-FA44",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "CLEAF SMART SIVA FA 45",
+"code": "CLEAF-FA45",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "CLEAF SMART TURCHESE",
+"code": "CLEAF-FA63",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "CLEAF SHERWOOD MALOJA 02",
+"code": "CLEAF-FB02",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "CLEAF-FB 07",
+"code": "CLEAF-FB07",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "CLEAF ARES GLAUCO",
+"code": "CLEAF-FB49",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "CLEAF IDEA FB82",
+"code": "CLEAF-FB82",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "CLEAF IDEA FB84",
+"code": "CLEAF-FB84",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "CLEAF IDEA FB85",
+"code": "CLEAF-FB85",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "CLEAF ALPACA FC 43",
+"code": "CLEAF-FC43",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "CLEAF ZOSEMITE BURNED",
+"code": "CLEAF-S012",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "CLEAF YOSEMITE/SETA S 016",
+"code": "CLEAF-S016",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "CLEAF PENELOPE SF 33",
+"code": "CLEAF-SF33",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "CLEAF SMART NERO U129",
+"code": "CLEAF-U129",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "CLEAF SMART ZELENA UA 71",
+"code": "CLEAF-UA71",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "COMP",
+"code": "COMP",
+"sheet": [
+4100,
+1300
+],
+"thickness": 10.0,
+"grain": 0
+},
+{
+"name": "EG. BETON CH. SV. SIVI",
+"code": "F-186",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.BETON CH.TAMNO SIVI F 187",
+"code": "F-187",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "MERMER CARARA BELI F204",
+"code": "F-204",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "CRNA PIETRA GRIGIA F 206",
+"code": "F-206",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.BETON 275",
+"code": "F-275",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EGGER F-302 FERRO BRONZE",
+"code": "F-302",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.CERAMIC ZARDJALI F310",
+"code": "F-310",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.CERAMIC ANTRACIT F311",
+"code": "F-311",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.PLATNO BEZ F-416 ST10",
+"code": "F-416",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.PLATNO BEZ F 425",
+"code": "F-425",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.KOZA BEZ F-427",
+"code": "F-427",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG. PLATNO ANTRACIT F 433",
+"code": "F-433",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.QUARZ INDIGO F 438",
+"code": "F-438",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.QUARC BRONZA F 440",
+"code": "F-440",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG QUARC KUBANIT F488",
+"code": "F-488",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.TITAN F 501",
+"code": "F-501",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.GRAFIT METALIK F 503",
+"code": "F-503",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.ALUMINIJ F 509",
+"code": "F-509",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.ALUMINIJ F 509/10",
+"code": "F-509/10",
+"sheet": [
+2800,
+2070
+],
+"thickness": 10.0,
+"grain": 0
+},
+{
+"name": "EG.ALUMINIJ F 509/16",
+"code": "F-509/16",
+"sheet": [
+2800,
+2070
+],
+"thickness": 16.0,
+"grain": 0
+},
+{
+"name": "EG.ALUMINIJ F 509/25",
+"code": "F-509/25",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.METALIK ZLATNA F 571",
+"code": "F-571",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.CIMET FINO F 584",
+"code": "F-584",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.CIMET FINO F 584/25",
+"code": "F-584/25",
+"sheet": [
+2800,
+2070
+],
+"thickness": 25.0,
+"grain": 1
+},
+{
+"name": "SIVO BRAON METALLO F 633",
+"code": "F-633",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG BELI CROMIX F 637",
+"code": "F-637",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.CHROMIX BRONZANI F 642",
+"code": "F-642",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.BELI CLAYSTONE F 649 ST16",
+"code": "F-649",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.SIVI CLAYSTONE F 651",
+"code": "F-651",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.MIROLINE CELIK F-784 ST2",
+"code": "F-784",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.MICROLINE ZLATNI F 785",
+"code": "F-785",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.MERMER LEVANTE F 812",
+"code": "F-812",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "FUNDERMAX UGALJ",
+"code": "FUN",
+"sheet": [
+2800,
+2050
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "FUN.AGATA GREY 0027 GA",
+"code": "FUN-0027",
+"sheet": [
+2800,
+2050
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "FUN LIBERO 0039",
+"code": "FUN-0039",
+"sheet": [
+2800,
+2050
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "FUN. MARINO 0042",
+"code": "FUN-0042",
+"sheet": [
+2800,
+2050
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "FUN COGNAC HRAST",
+"code": "FUN-0048",
+"sheet": [
+2800,
+2050
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "FUN SIVA GRAFIT 0077SG",
+"code": "FUN-0077",
+"sheet": [
+2800,
+2050
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "FUN.MDF.BELI.SJ.0085 - SG",
+"code": "FUN-0085",
+"sheet": [
+2800,
+2050
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "FUN.ALBATROS 0411",
+"code": "FUN-0411",
+"sheet": [
+2800,
+2050
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "FUN.APOLLO PRIRODNI",
+"code": "FUN-0417",
+"sheet": [
+2800,
+2050
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "FUN PINERO 0419 GA",
+"code": "FUN-0419",
+"sheet": [
+2820,
+2050
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "FUN.ORCA 0599 SG/SF",
+"code": "FUN-0599",
+"sheet": [
+2800,
+2050
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "FUN.INDIAN ARCTIC BELA 0606",
+"code": "FUN-0606",
+"sheet": [
+2800,
+2050
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "FUN.SEA GREEN 0630",
+"code": "FUN-0630",
+"sheet": [
+2820,
+2050
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "FUN SVETLO SIVA 0741 SG",
+"code": "FUN-0741",
+"sheet": [
+2800,
+2050
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "PATINA BRONZE 0794 GA",
+"code": "FUN-0794",
+"sheet": [
+2820,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "FUN WINTER BELA 0851 SG/SF VISKI SJA",
+"code": "FUN-0851B",
+"sheet": [
+2800,
+2050
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "FUN WHITE 0851 BR POLA SJ.",
+"code": "FUN-0851W",
+"sheet": [
+2820,
+2050
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "FUN.MASLINA SJAJ 1375",
+"code": "FUN-1375",
+"sheet": [
+2800,
+2050
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "FUN-2121 QUARCO LUCIDO",
+"code": "FUN-2121",
+"sheet": [
+2820,
+2050
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "FUN.INDIAN CRVENA",
+"code": "FUN-CRVENI",
+"sheet": [
+2800,
+2050
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "FUN ORAH CHEYENE SM",
+"code": "FUN-ORAH",
+"sheet": [
+2820,
+2050
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "FUR.IV BUK/BUK 2800*2050",
+"code": "FUR-000",
+"sheet": [
+2800,
+2050
+],
+"thickness": 19.0,
+"grain": 1
+},
+{
+"name": "FUR.IV BUK/BUK 2800*2070",
+"code": "FUR-003",
+"sheet": [
+2800,
+2070
+],
+"thickness": 19.0,
+"grain": 1
+},
+{
+"name": "FUR.IV ORAH/ORAH 2800*2070",
+"code": "FUR-008",
+"sheet": [
+2800,
+2070
+],
+"thickness": 19.0,
+"grain": 1
+},
+{
+"name": "FUR.IV HRA/HRA 2800*2070",
+"code": "FUR-009",
+"sheet": [
+2800,
+2070
+],
+"thickness": 19.0,
+"grain": 1
+},
+{
+"name": "FUR.IV JAS/JAS 2800*2070",
+"code": "FUR-011",
+"sheet": [
+2800,
+2070
+],
+"thickness": 19.0,
+"grain": 1
+},
+{
+"name": "FUR.IV JAS/JAS 2750*2070",
+"code": "FUR-012",
+"sheet": [
+2750,
+2070
+],
+"thickness": 19.0,
+"grain": 1
+},
+{
+"name": "FUR.MED.BUK/BUK 2800*2070",
+"code": "FUR-021",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "FUR.MED.HRA/HRA 2800*2070",
+"code": "FUR-025",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "FUR.MED.JAS/JAS 2800*2070",
+"code": "FUR-030",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "FUR.MED TRE/TRE 2800*2070",
+"code": "FUR-031",
+"sheet": [
+2800,
+2070
+],
+"thickness": 19.0,
+"grain": 1
+},
+{
+"name": "FUR.MED AMER ORAH 2800 X 2070",
+"code": "FUR-032",
+"sheet": [
+2800,
+2070
+],
+"thickness": 19.0,
+"grain": 1
+},
+{
+"name": "FUR.MED AMER ORAH KALT 3050X1850",
+"code": "FUR-033",
+"sheet": [
+3050,
+1840
+],
+"thickness": 19.0,
+"grain": 1
+},
+{
+"name": "FUR.MED 9 MM ORAH KALT 3050X1850",
+"code": "FUR-034",
+"sheet": [
+3050,
+1840
+],
+"thickness": 9.0,
+"grain": 1
+},
+{
+"name": "FUR HR/HR 9MM",
+"code": "FUR9MM",
+"sheet": [
+2800,
+2070
+],
+"thickness": 9.0,
+"grain": 1
+},
+{
+"name": "GIZIR MDF CAPUCCINO 6025",
+"code": "GIZ-6025",
+"sheet": [
+2800,
+1220
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "GIZIR MDF ANTRACIT 6045",
+"code": "GIZ-6045",
+"sheet": [
+2800,
+1220
+],
+"thickness": 19.0,
+"grain": 0
+},
+{
+"name": "GIZIR PERL MATRIKS 6183",
+"code": "GIZ-6183",
+"sheet": [
+2800,
+1220
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.MAKASSAR MOKA H-1101",
+"code": "H-1101",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "BRAON KANSAS HRAST H 1113 ST10",
+"code": "H-1113",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.ORAH RIBERA H 1114 ST9",
+"code": "H-1114",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.BAMENDA SIVO BEZ",
+"code": "H-1115",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.BAMEDA VENGE H 1116",
+"code": "H-1116",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG. BELO DRVO H 1122",
+"code": "H-1122",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG. GRAPHITEWOOD H 1123",
+"code": "H-1123",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "TERMO HRAST ST15  H 1129",
+"code": "H-1129",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.HRAST FERARA H 1137",
+"code": "H-1137",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EGER HRAST FERARA H 1137/10",
+"code": "H-1137/10",
+"sheet": [
+2800,
+2070
+],
+"thickness": 10.0,
+"grain": 1
+},
+{
+"name": "EG.HRAST FERARA H 1137/25MM",
+"code": "H-1137/25",
+"sheet": [
+2800,
+2070
+],
+"thickness": 25.0,
+"grain": 1
+},
+{
+"name": "EG.HRAST BARTOLINO H 1145",
+"code": "H-1145",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST BARTOLINO SIVI H 1146",
+"code": "H-1146",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.AUTENTIK HRAST SIVI H1150",
+"code": "H-1150",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.AUTENTIK HRAST H-1151",
+"code": "H-1151",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.HR. HALIFAX BELI H 1176",
+"code": "H-1176",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST HALIFAX NATUR H1180",
+"code": "H-1180",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.HRAST HALIFAX TOBACO",
+"code": "H-1181",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.HRAST TERMO CRNO BRAON",
+"code": "H-1199",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG. BREST TOSSINI H1212",
+"code": "H-1212",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.JASEN CASSINO H-1215",
+"code": "H-1215",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "JASEN NAVARRA H 1250",
+"code": "H-1250",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.BAGREM BRANSON NATUR H 1251",
+"code": "H-1251",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "JASEN MOLINA H-1267",
+"code": "H-1267",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.BAGREM SVETLI H 1277",
+"code": "H-1277",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.BAGREM SVETLI H 1277/10",
+"code": "H-1277/10",
+"sheet": [
+2800,
+2070
+],
+"thickness": 10.0,
+"grain": 1
+},
+{
+"name": "EG.BAGREM SVETLI H 1277/25",
+"code": "H-1277/25",
+"sheet": [
+2800,
+2070
+],
+"thickness": 25.0,
+"grain": 1
+},
+{
+"name": "EG. JASEN LYON PESAK H1298",
+"code": "H-1298",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG. WHITERIVER BEZ PESAK",
+"code": "H-1312",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.WHITERIVER CRNO-BRAON",
+"code": "H-1313",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.DIVLJI HRAST NATUR H1318",
+"code": "H-1318",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG HRAST SANAT FE H-1330",
+"code": "H-1330",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.HRAST FERARA SVETLI H1334",
+"code": "H-1334",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.HRAST FERARA SVET.1334/25",
+"code": "H-1334/25",
+"sheet": [
+2800,
+2070
+],
+"thickness": 25.0,
+"grain": 1
+},
+{
+"name": "EG.HR.SHERMAN KON BRAON",
+"code": "H-1344",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.HR. SHERMAN SIVI",
+"code": "H-1345",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.HR. SHERMAN ANTRAC.H 1346",
+"code": "H-1346",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.HRAST ARGON NATUR H-1372",
+"code": "H-1372",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST ORLEANS",
+"code": "H-1377",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.HRAST ORLEANS BRAON H1379",
+"code": "H-1379",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.HRAST DENVER GRAFIT H 1387 ST10",
+"code": "H-1387",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.HRAST CREMONA H 1394",
+"code": "H-1394",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.HRAST CREMONA H 1394/10MM",
+"code": "H-1394/10",
+"sheet": [
+2800,
+2070
+],
+"thickness": 10.0,
+"grain": 1
+},
+{
+"name": "EG.HRAST CREMONA H 1394/25MM",
+"code": "H-1394/25",
+"sheet": [
+2800,
+2070
+],
+"thickness": 25.0,
+"grain": 1
+},
+{
+"name": "EG.HRAST BRAON DENVER H1399 ST10",
+"code": "H-1399",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.AMBARSKO DRVO H1400 ST36",
+"code": "H-1400",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.CASCINA BOR H1401 ST22",
+"code": "H-1401",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.WOODLINE KREM H 1424",
+"code": "H-1424",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.WOODOLINE KREME H 1424/10",
+"code": "H-1424/10",
+"sheet": [
+2800,
+2070
+],
+"thickness": 10.0,
+"grain": 1
+},
+{
+"name": "EG.WOODLINE KREME H 1424/25",
+"code": "H-1424/25",
+"sheet": [
+2800,
+2070
+],
+"thickness": 25.0,
+"grain": 1
+},
+{
+"name": "EG.WOODLINE MOKA H 1428",
+"code": "H-1428",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.WOODLINE MOKA H1428/10",
+"code": "H-1428/10",
+"sheet": [
+2800,
+2070
+],
+"thickness": 10.0,
+"grain": 1
+},
+{
+"name": "EG.WOODLINE MOKA H1428/25",
+"code": "H-1428/25",
+"sheet": [
+2800,
+2070
+],
+"thickness": 25.0,
+"grain": 1
+},
+{
+"name": "EG.ALPSKI BOR H-1444-ST9",
+"code": "H-1444",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.AVOLA BELA H-1474",
+"code": "H-1474",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.BOR SAMPANJ AVIOLA H-1476",
+"code": "H-1476",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.AVOLA BRAON SIVA H 1484",
+"code": "H-1484",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.JAKSON BOR H1486 ST36",
+"code": "H-1486",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.BRAMBERG BOR H-1487",
+"code": "H-1487",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.MAHAGONI  SAPELI H-1509",
+"code": "H-1509",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.BUKVA BAVARSKA H-1511",
+"code": "H-1511",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.BUKVA BAVARSKA H 1511/10",
+"code": "H-1511/10",
+"sheet": [
+2800,
+2070
+],
+"thickness": 10.0,
+"grain": 1
+},
+{
+"name": "EG.JAVOR MED H 1521",
+"code": "H-1521",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "VENGE H 1555",
+"code": "H-1555",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.BUKVA SVETLA H 1582",
+"code": "H-1582",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.BUKVA SVETLA H 1582/25",
+"code": "H-1582/25",
+"sheet": [
+2800,
+2070
+],
+"thickness": 25.0,
+"grain": 1
+},
+{
+"name": "EG.ČOKO BUKVA H 1599",
+"code": "H-1599",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG. COKO BUKVA H1599/10",
+"code": "H-1599/10",
+"sheet": [
+2800,
+2070
+],
+"thickness": 10.0,
+"grain": 1
+},
+{
+"name": "EG.TRESNJA ROMANA H 1615",
+"code": "H-1615",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG. LOCARNO TRESNJA H 1636",
+"code": "H-1636",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.TRESNJA LOMBARD H 1698",
+"code": "H-1698",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EGTRESNJA LOMBARD H-1698/25MM",
+"code": "H-1698/25",
+"sheet": [
+2800,
+2070
+],
+"thickness": 25.0,
+"grain": 1
+},
+{
+"name": "EG.PRIRODNA TRESNJA H 1704",
+"code": "H-1704",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.TRESNJA H 1706",
+"code": "H-1706",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.ORAH FRANCUSKI H 1709",
+"code": "H-1709",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.KESTEN KENTUCKY",
+"code": "H-1710",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.LINCOLN ORAH H 1714",
+"code": "H-1714",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.BREZA MAINAU H 1733",
+"code": "H-1733",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.KANADSKI JAVOR BELI H 1867",
+"code": "H-1867",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.BUKVA TIROL H 1932",
+"code": "H-1932",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.BUKVA TIROL H-1932/25",
+"code": "H-1932/25",
+"sheet": [
+2800,
+2070
+],
+"thickness": 25.0,
+"grain": 1
+},
+{
+"name": "EG.KALVADOS H 1951",
+"code": "H-1951",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.HRAST HUNTON TAMNI H 2033 ST10",
+"code": "H-2033",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.ZEBRANO SIVO-BEŽ H3005",
+"code": "H-3005",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.ZEBRANO SVETLI H 3006",
+"code": "H-3006",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.COCO BOLO H 3012 ST22",
+"code": "H-3012",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.MAKASSAR H 3025",
+"code": "H-3025",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.BORNEO TARTUF SMEDJI H-3047ST10",
+"code": "H-3047",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.BORNEO ANTIK SMEDJI H 3048",
+"code": "H-3048",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.WENGE MALI H-3058",
+"code": "H-3058",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.BELO NORD.DRVO H-3060 ST24",
+"code": "H-3060",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.NATURAL URBANO H 3070",
+"code": "H-3070",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG. BELA HACIJENDA H3078",
+"code": "H-3078",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.MAHAGONI SIJERA H-3080",
+"code": "H-3080",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.CRNA HACIJENDA H 3081",
+"code": "H-3081",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.CRNA HACIJENDA 10 MM",
+"code": "H-3081/10",
+"sheet": [
+2800,
+2070
+],
+"thickness": 10.0,
+"grain": 1
+},
+{
+"name": "EG. DRIFTWOOD H-3090",
+"code": "H-3090",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.DRIFTWOOD SIVO-BRAON H3092",
+"code": "H-3092",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.MERANO NATUR H 3128",
+"code": "H-3128",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.NATUR DAVOS H3131",
+"code": "H-3131",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.TARTUF DAV. BRAON H3133",
+"code": "H-3133",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.HR. SHERMAN SIVI",
+"code": "H-3145",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG. HRAST LORENZO H 3146",
+"code": "H-3146",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG. HR CHARLESTON H 3154",
+"code": "H-3154",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.HRAST SIVI CORBRIDGE  H-3156 ST12",
+"code": "H-3156",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.VICENZA HRAST H 3157",
+"code": "H-3157",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.HRAST KENDAL NATUR H 3170",
+"code": "H-3170",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.HRAST HALIFAX KALAJ H 3176",
+"code": "H-3176",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.METALIK FINELINE ANTRACIT H 3190",
+"code": "H-3190",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.METALIK FINELINE BRAON",
+"code": "H-3192",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.HRAST ARLINGTON H3303",
+"code": "H-3303",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.HRAST SIVI ŠATO H3304",
+"code": "H-3304",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.ANTRACIT ŠATO H3306",
+"code": "H-3306",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.HRAST GLADSTONE PESAK H3309",
+"code": "H-3309",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.HRAST GLADSTONE H3325 ST28",
+"code": "H-3325",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.HRAST GLADSTONE SIVO-BEZ H3326",
+"code": "H-3326",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.HRAST NEBRASKA H3331",
+"code": "H-3331",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG HR NEBRASCA H 3331/25",
+"code": "H-3331/25",
+"sheet": [
+2800,
+2070
+],
+"thickness": 25.0,
+"grain": 1
+},
+{
+"name": "EG.HRAST NEBRASKA SIVI H3332",
+"code": "H-3332",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.HRAST CORTINA SIVI H3353",
+"code": "H-3353",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.HRAST MURLAND BRAON H-3370",
+"code": "H-3370",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.HRAST CIMET H-3375",
+"code": "H-3375",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.HRAST NATUR H-3386",
+"code": "H-3386",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG. HRAST RUSTIK H-3387",
+"code": "H-3387",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST NATUR SV. H 3389",
+"code": "H-3389",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST NATUR CORBRIDGE H-3395",
+"code": "H-3395",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.COGNAC KENDAL OAK",
+"code": "H-3398ST12",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.ARIS PLAN BELI H3403",
+"code": "H-3403",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.ALAND BOR BELI H3430",
+"code": "H-3430",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG. ALAND BOR POLARNI H 3433",
+"code": "H-3433",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EGER BELI FLEETWOOD H3450",
+"code": "H-3450",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.CHAMPAGNE H 3451 ST 22",
+"code": "H-3451",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.LAVA GREY FLEETWOOD H3453",
+"code": "H-3453",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.ORAH PACIFIK NATUR H 3700ST10",
+"code": "H-3700",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.ORAH PACIFIK H 3702",
+"code": "H-3702",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.ORAH PACIFIK H3702/10MM",
+"code": "H-3702/10",
+"sheet": [
+2800,
+2070
+],
+"thickness": 10.0,
+"grain": 1
+},
+{
+"name": "EG.ORAH AIDA H 3704",
+"code": "H-3704",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.ORAH CARINI NATUR H 3710",
+"code": "H-3710",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.ORAH CARINI H 3711",
+"code": "H-3711",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.NATURAL HICKORY H3730",
+"code": "H-3730",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG. HRAST BRAON HICKORY H-3732",
+"code": "H-3732",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.ORAH DIZON H 3734",
+"code": "H-3734",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.ORAH AVINJON SIVO H3738",
+"code": "H-3738",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.ARIS SWISS BELI H 3755",
+"code": "H-3755",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.ORAH CARINI BELJENI",
+"code": "H-3773",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.KARIBSKI ORAH H 3778",
+"code": "H-3778",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG. JAVOR MANDAL H -3840",
+"code": "H-3840",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG. JAVOR HARD SAMPANJAC",
+"code": "H-3860",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.NATURAL COUNTRY BEECH",
+"code": "H-3991",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG HR NEBRASCA H3331/25",
+"code": "H3331/25",
+"sheet": [
+2800,
+2070
+],
+"thickness": 25.0,
+"grain": 1
+},
+{
+"name": "KAINDL K4399 DP",
+"code": "KAI-4399",
+"sheet": [
+2800,
+2070
+],
+"thickness": 19.0,
+"grain": 0
+},
+{
+"name": "KAINDL K5414",
+"code": "KAI-5414",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "NERO KAST 10 MM",
+"code": "KAST10-NER",
+"sheet": [
+2800,
+2070
+],
+"thickness": 10.0,
+"grain": 1
+},
+{
+"name": "HRAST  ZAN. BELI 001PW",
+"code": "KRO-001",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST ZAN.SIVI 002 PW",
+"code": "KRO-002",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST ZAN.ZLATNI 003",
+"code": "KRO-003",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST ZAN.TOBACO 004",
+"code": "KRO-004",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST KAMENI UR. 005 PW",
+"code": "KRO-005",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "CILIBAR UR.HRAST 006 PW",
+"code": "KRO-006",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "KAFA UR.HRAST 007 PW",
+"code": "KRO-007",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "ORAH SVETLI SELECT 008 PW",
+"code": "KRO-008",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "ORAH TAMNI SELEKT 009 PW",
+"code": "KRO-009",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "LOFT BELI BOR 010 SN",
+"code": "KRO-010",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "LOFT KREM BOR 011 SN",
+"code": "KRO-011",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "KRONO BUKVA PESAK 012",
+"code": "KRO-012",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "BUKVA ARTISAN 013",
+"code": "KRO-013",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "TARTUF BUKVA 014",
+"code": "KRO-014",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "VINTAGE  015PW",
+"code": "KRO-015",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "CARBON 016PW",
+"code": "KRO-016",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "BREST IZBELJENI 017",
+"code": "KRO-017",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "DIMLJENI BREST K 018 PW",
+"code": "KRO-018",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "SREBRNI BREST LIBERTY K 019 PW",
+"code": "KRO-019",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "ORAH VATRENI 020 PW",
+"code": "KRO-020",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "JECAM K 021 SN",
+"code": "KRO-021",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "SATENSKO CRNO DRVO K 022 SN",
+"code": "KRO-022",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "SIROVI HRAST 105 PW",
+"code": "KRO-075",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "KRONO PESCANI HRAST",
+"code": "KRO-076",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "SVETLA RIVERS.TRESNJA 077",
+"code": "KRO-077",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "TAMNA RIVERSIDE TRESNJA 078",
+"code": "KRO-078",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "SIVI KLUB HRAST K 079",
+"code": "KRO-079",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "OBALSKI HRAST BELI 080PW",
+"code": "KRO-080",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "OBALSKI HR BELI 080/25",
+"code": "KRO-080/25",
+"sheet": [
+2800,
+2070
+],
+"thickness": 25.0,
+"grain": 1
+},
+{
+"name": "SAT.OBALSKI HRAST 081",
+"code": "KRO-081",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "KRONO 082 PW BURBON HRAST",
+"code": "KRO-082",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "SVETLI ARTWOOD 083",
+"code": "KRO-083",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "TAMNI ARTWOOD 084SN",
+"code": "KRO-084",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "SVETLI ROCKFORD HICKORY K 085",
+"code": "KRO-085",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "NATUR ROCKFORD HICKORY 086",
+"code": "KRO-086",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "TAMNI ROCKFORD HICKORY 087",
+"code": "KRO-087",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "BELO NORDIJSKO DRVO K 088",
+"code": "KRO-088",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "ALUMINIJUM KRO 0881",
+"code": "KRO-0881",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "SIVO NORDIJSKO DRVO",
+"code": "KRO-089",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "BRONZANI HRAST 090 PW",
+"code": "KRO-090",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "GLINA K 096",
+"code": "KRO-096",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "KRONO SUTON PLAVA 097SU",
+"code": "KRO-097",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "KRONO 098 CERAMIC CRVENA",
+"code": "KRO-098",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "MODRO PLAVA 099 SU",
+"code": "KRO-099",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "KRO-100 CIKLAMA",
+"code": "KRO-100",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "KRO BELA 101 GLAT 280/25",
+"code": "KRO-101-25",
+"sheet": [
+2800,
+2070
+],
+"thickness": 25.0,
+"grain": 0
+},
+{
+"name": "KRO KORPUS BELA  101/10",
+"code": "KRO-101/10",
+"sheet": [
+2800,
+2070
+],
+"thickness": 10.0,
+"grain": 0
+},
+{
+"name": "KRO BELA GLAT 101/16MM",
+"code": "KRO-101/16",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "KRO BELA 101 GLAT 280",
+"code": "KRO-101/18",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "KRO BELA GLAT 101/25",
+"code": "KRO-101/2",
+"sheet": [
+2800,
+2070
+],
+"thickness": 25.0,
+"grain": 0
+},
+{
+"name": "KRO BELA KORA 101 PE/25",
+"code": "KRO-101/25",
+"sheet": [
+2800,
+2070
+],
+"thickness": 25.0,
+"grain": 0
+},
+{
+"name": "KRO BELA KORA 101 PE",
+"code": "KRO-101/PE",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "SIROVI HRAST 105 PW",
+"code": "KRO-105",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "ELEGANTNI HRAST 107 PW",
+"code": "KRO-107",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "KRONO 108 SU PELTRO",
+"code": "KRO-108",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "KRO KORPUS BELA 110  280",
+"code": "KRO-110/18",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "KRONO 111 BELA",
+"code": "KRO-111",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "KRONO SIVA 112 PE",
+"code": "KRO-112",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "KRONO SIVA 112 PE/25MM",
+"code": "KRO-112/25",
+"sheet": [
+2750,
+2070
+],
+"thickness": 25.0,
+"grain": 0
+},
+{
+"name": "BELA OPAK 114-SM",
+"code": "KRO-114-SM",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "KRONO 114 PE BELA OPAK KORA",
+"code": "KRO-114PE",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "PASTEL PLAVA 121",
+"code": "KRO-121",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "CINK ZUTA 134",
+"code": "KRO-134",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "CRVENA 149 PE",
+"code": "KRO-149",
+"sheet": [
+2750,
+2070
+],
+"thickness": 0.0,
+"grain": 0
+},
+{
+"name": "GRAFIT SIVA 162 SU",
+"code": "KRO-162",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "KRO-ANTRACIT 164",
+"code": "KRO-164",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "SIVA 1700 PE",
+"code": "KRO-1700",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "SIVA 1700PE/25MM",
+"code": "KRO-1700/2",
+"sheet": [
+2800,
+2070
+],
+"thickness": 25.0,
+"grain": 0
+},
+{
+"name": "TAMNO SIVA 171 PE",
+"code": "KRO-171",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "KRO BREZA 1715",
+"code": "KRO-1715",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "KRUSKA DIVLJA 1764",
+"code": "KRO-1764",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "TAMNO BRAON 182BS",
+"code": "KRO-182",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "CRNA KORA 190 PE",
+"code": "KRO-190",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "CRNA KORA 190/25MM",
+"code": "KRO-190/25",
+"sheet": [
+2800,
+2070
+],
+"thickness": 25.0,
+"grain": 0
+},
+{
+"name": "HLADNO SIVA 191 PE",
+"code": "KRO-191",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "JOVA 1912 BS",
+"code": "KRO-1912",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "JABUKA 1972 BS",
+"code": "KRO-1972",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST CHAMONIX 2216 BS",
+"code": "KRO-2216",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "KRONO PETROL 244",
+"code": "KRO-244",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "HRAST FUMARE 3167",
+"code": "KRO-3167",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "TRESNJA BALATON 340 BS",
+"code": "KRO-340",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "TRESNJA 344",
+"code": "KRO-344",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "TRESNJA 344/25",
+"code": "KRO-344/25",
+"sheet": [
+2750,
+2070
+],
+"thickness": 25.0,
+"grain": 1
+},
+{
+"name": "SILK FLOW 349",
+"code": "KRO-349",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "COCRETE FLOW 350",
+"code": "KRO-350",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "RASTI FLOW 351",
+"code": "KRO-351",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "IRON FLOW 352 RT",
+"code": "KRO-352",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "TECNI UGLJEN 353",
+"code": "KRO-353",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST COLONIAL GRANGE 354",
+"code": "KRO-354",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST PLATINUM GRANGE 355",
+"code": "KRO-355",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST SAND GRANGE",
+"code": "KRO-356",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST CASTELLO 357",
+"code": "KRO-357",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST HONEY CASTELLO",
+"code": "KRO-358",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST COGNAC CASTELLO 359PW",
+"code": "KRO-359",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST VINTAGE HARBOR 360",
+"code": "KRO-360",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST GOLD HARBOR K 361",
+"code": "KRO-361",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST ESPRESSO HARBOR",
+"code": "KRO-362",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "BREST PRIRODNI AURORA  363",
+"code": "KRO-363",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "BREST STONE AURORA 364",
+"code": "KRO-364",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST COAST EVOKE 365",
+"code": "KRO-365",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST FOSIL EVOKE 366",
+"code": "KRO-366",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "JAVOR EVROPSKI 375",
+"code": "KRO-375",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "BUKVA BAVARIA 381",
+"code": "KRO-381",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "BUKVA BAVARIJA 381/25",
+"code": "KRO-381/25",
+"sheet": [
+2800,
+2070
+],
+"thickness": 25.0,
+"grain": 1
+},
+{
+"name": "ATELJE SVETLI 4298 SU",
+"code": "KRO-4298",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "ATELJE TAMNI 4299 UE",
+"code": "KRO-4299",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "OPERA ORAH 481",
+"code": "KRO-481",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "KRONO BELA 500 GLAT",
+"code": "KRO-500",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "SLONOVA KOST 514",
+"code": "KRO-514",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "PESAK 515",
+"code": "KRO-515",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "OXID VINTAGE 5194",
+"code": "KRO-5194",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "BEZ 522 PE",
+"code": "KRO-522",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "KRO PLEMENITI BREST 5500",
+"code": "KRO-5500",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST SLAVONSKI 5501",
+"code": "KRO-5501",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST VANILA SIVI 5502",
+"code": "KRO-5502",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "TARTUF ROVERE 5503 SN",
+"code": "KRO-5503",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST VINTAGE SIVI 5507",
+"code": "KRO-5507",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "NARANDZASTA SVETLA 551",
+"code": "KRO-551",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "MARMARA PLAVA 5515",
+"code": "KRO-5515",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "LIMETA 5519 BS",
+"code": "KRO-5519",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "HRAST KAMENI 5527",
+"code": "KRO-5527",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "PRIZMA 5528 SU",
+"code": "KRO-5528",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "OREGON 5529",
+"code": "KRO-5529",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "DIVLJA VATRA 5530",
+"code": "KRO-5530",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "BADEM 564 PE",
+"code": "KRO-564",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "KASMIR 5981 BS",
+"code": "KRO-5981",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "SKOLJKA 5982 BS",
+"code": "KRO-5982",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "COBALT SIVA 6299",
+"code": "KRO-6299",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "FINELINE BRONCA 6396",
+"code": "KRO-6396",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "PLEMENITI BREST TAMNI 6597 SU",
+"code": "KRO-6597",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "KRONO 7031 KREM",
+"code": "KRO-7031",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "SAMPANJ 7045",
+"code": "KRO-7045",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "PASTEL GREEN 7063",
+"code": "KRO-7063",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "CILI CRVENA 7113 BS",
+"code": "KRO-7113",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "LIMUNN SORBET 7123 BS",
+"code": "KRO-7123",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "LATTE 7166",
+"code": "KRO-7166",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "VIOLA 7167",
+"code": "KRO-7167",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "PLAMEN NAR. 7176 BS",
+"code": "KRO-7176",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "MENTA 7180 BS",
+"code": "KRO-7180",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "KRO LJUBICASTO PLAVA 7186",
+"code": "KRO-7186",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "ZELENA MAMBA 7190 BS",
+"code": "KRO-7190",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EVER GREEN 7191",
+"code": "KRO-7191",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "ORAH 729 PR",
+"code": "KRO-729",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "ORAH 729/25MM",
+"code": "KRO-729/25",
+"sheet": [
+2800,
+2070
+],
+"thickness": 25.0,
+"grain": 1
+},
+{
+"name": "HRAST PLANINSKI 740",
+"code": "KRO-740",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "RUZINO DRVO 775 PR",
+"code": "KRO-775PR",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "MAHAGONI 776",
+"code": "KRO-776",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "TRESNJA HAVANA 7935",
+"code": "KRO-7935",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "KRO BISERNO BELA 8100 SM",
+"code": "KRO-8100",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "PLATAN MONAKO SREDNJI",
+"code": "KRO-8195",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST VINTAGE PLATINA 8197",
+"code": "KRO-8197",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "PLATAN MONAKO SVET.8203",
+"code": "KRO-8203",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST IMABARI 8304",
+"code": "KRO-8304",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST ZLATNI 8305",
+"code": "KRO-8305",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "MODENA MASLINA 8308",
+"code": "KRO-8308",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "RIGOLETO BRONZA 8312",
+"code": "KRO-8312",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "RIGOLETO SREBRNI 8313",
+"code": "KRO-8313",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "LIFE COKOLADA 8315",
+"code": "KRO-8315",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "SAMPANJ METALIK 8349",
+"code": "KRO-8349",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "CROSSLINE LATTE 8361",
+"code": "KRO-8361",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "CROSSLINE KARAMEL 8362",
+"code": "KRO-8362",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "SURF BELA 8402",
+"code": "KRO-8402",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "SURF CRNA 8404",
+"code": "KRO-8404",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "ORFEO TAMNI 8409",
+"code": "KRO-8409",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "ORFEO SVETLI 8410",
+"code": "KRO-8410",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "IMENEO SVETLI 8413",
+"code": "KRO-8413",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "IMENEO TAMNI 8414",
+"code": "KRO-8414",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "TOSKA 8415",
+"code": "KRO-8415",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "RIGOLETO BAKAR 8417",
+"code": "KRO-8417",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "NAGANO HRAST 8431",
+"code": "KRO-8431",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "TWIST SVETLI 8435",
+"code": "KRO-8435",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "TWIST TAMNI 8436",
+"code": "KRO-8436",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "MAKASAR MEAPI SIVI 8439",
+"code": "KRO-8439",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "MAKASAR BRAON 8440",
+"code": "KRO-8440",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "ORAH RIBERA 8448",
+"code": "KRO-8448",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "ORAH AIDA 8478",
+"code": "KRO-8478",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "JASEN TAORMINA 8503",
+"code": "KRO-8503",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "IZBELJENO BELO DRVO 8508",
+"code": "KRO-8508",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "IZBELJENO CRNO DRVO 8509",
+"code": "KRO-8509",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "SAKURA CRNA 8510",
+"code": "KRO-8510",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "SAKURA BELA 8511",
+"code": "KRO-8511",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "GRAFFIATO 8514",
+"code": "KRO-8514",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "DIVLJA VATRA 8530",
+"code": "KRO-8530",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "MAKIJATO 8533",
+"code": "KRO-8533",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "ROZE 8534",
+"code": "KRO-8534",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "PINK 8535",
+"code": "KRO-8535",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "LILA 8536",
+"code": "KRO-8536",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "SVETLO PLAVA 8538",
+"code": "KRO-8538",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "VENGE 854",
+"code": "KRO-854",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "FINELINE BELA 8547",
+"code": "KRO-8547",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "FINELINE BRAON 8548",
+"code": "KRO-8548",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "PLATINA 859",
+"code": "KRO-859",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "8622 PR MLECNI HRAST",
+"code": "KRO-8622",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "ZEBRANO TAMNI 8656",
+"code": "KRO-8656",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "ZEBRANO SVETLI 8657",
+"code": "KRO-8657",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "POLU-SJAJ GL/GL 8681",
+"code": "KRO-8681",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "BRILIANT BELA 8681 SU",
+"code": "KRO-8681SU",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "SNEZNO BELA 8685",
+"code": "KRO-8685",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "BUKVA SVETLA 876",
+"code": "KRO-876",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "BUKVA SVETLA 876/25",
+"code": "KRO-876/25",
+"sheet": [
+2750,
+2070
+],
+"thickness": 25.0,
+"grain": 1
+},
+{
+"name": "SREBRNA 881",
+"code": "KRO-881",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "BOR LAREDO SVETLI 8915",
+"code": "KRO-8915",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST FERARA SVETLI 8921 280",
+"code": "KRO-8921",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HR. FERARA SVETLI 8921/25MM",
+"code": "KRO-8921/2",
+"sheet": [
+2800,
+2070
+],
+"thickness": 25.0,
+"grain": 1
+},
+{
+"name": "LISSA HRAST 8925",
+"code": "KRO-8925",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "ORAH TIEPOLO 8953 SU",
+"code": "KRO-8953",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "KOKO BOLO 8995",
+"code": "KRO-8995",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "OKEAN 8996",
+"code": "KRO-8996",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "AUTENTICNI VENGE 9016 BS",
+"code": "KRO-9016",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "TRESNJA AMERICKA 9345",
+"code": "KRO-9345",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "ORAH GUARINIERI 9455 PR",
+"code": "KRO-9455",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "OXID CRVENA 9551 BS",
+"code": "KRO-9551",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "OXID ZELENA 9561",
+"code": "KRO-9561",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "PASTEL HRAST KRO",
+"code": "KRO-9727",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "WENGE LUIZIJANA 9763",
+"code": "KRO-9763",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "ZEBRANOCLASIC 9775 BS",
+"code": "KRO-9775",
+"sheet": [
+2750,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "BAGREM LORKA 9944",
+"code": "KRO-9944",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "LES.BELI MDF 2800*2070",
+"code": "LES.01",
+"sheet": [
+2800,
+2070
+],
+"thickness": 3.0,
+"grain": 0
+},
+{
+"name": "LES.BOR SVETLI",
+"code": "LES.02",
+"sheet": [
+2800,
+2070
+],
+"thickness": 3.0,
+"grain": 1
+},
+{
+"name": "LES.BUKVA  280*207",
+"code": "LES.03",
+"sheet": [
+2800,
+2070
+],
+"thickness": 3.0,
+"grain": 1
+},
+{
+"name": "LES.CRNI 280*207",
+"code": "LES.04",
+"sheet": [
+2800,
+2070
+],
+"thickness": 3.0,
+"grain": 0
+},
+{
+"name": "LES.GOBI  280*207",
+"code": "LES.05",
+"sheet": [
+2800,
+2070
+],
+"thickness": 3.0,
+"grain": 0
+},
+{
+"name": "LES.HRAST FERARA 280*207",
+"code": "LES.06",
+"sheet": [
+2800,
+2090
+],
+"thickness": 3.2,
+"grain": 1
+},
+{
+"name": "LES.HRAST KREMONA 280*207",
+"code": "LES.07",
+"sheet": [
+2800,
+2070
+],
+"thickness": 3.0,
+"grain": 1
+},
+{
+"name": "LES.HRAST VANILA 280*207",
+"code": "LES.08",
+"sheet": [
+2800,
+2070
+],
+"thickness": 3.0,
+"grain": 1
+},
+{
+"name": "LES.HRAST SVETLI 207",
+"code": "LES.09",
+"sheet": [
+2800,
+2070
+],
+"thickness": 3.0,
+"grain": 1
+},
+{
+"name": "LES.HRAST TAMNI 280*207",
+"code": "LES.10",
+"sheet": [
+2800,
+2070
+],
+"thickness": 3.0,
+"grain": 1
+},
+{
+"name": "LES.JAVOR EVROPSKI  280*207",
+"code": "LES.11",
+"sheet": [
+2800,
+2070
+],
+"thickness": 3.0,
+"grain": 1
+},
+{
+"name": "LES.KALVADOS 207*280",
+"code": "LES.12",
+"sheet": [
+2800,
+2070
+],
+"thickness": 3.0,
+"grain": 1
+},
+{
+"name": "LES.KREMONA 280*207",
+"code": "LES.13",
+"sheet": [
+2800,
+2070
+],
+"thickness": 3.2,
+"grain": 1
+},
+{
+"name": "LES.MAHAGONI 280*207",
+"code": "LES.14",
+"sheet": [
+2800,
+2070
+],
+"thickness": 3.0,
+"grain": 1
+},
+{
+"name": "LES.ORAH ANJA 280*207",
+"code": "LES.15",
+"sheet": [
+2800,
+2070
+],
+"thickness": 3.0,
+"grain": 1
+},
+{
+"name": "LES.SIROVI MDF 207*280",
+"code": "LES.16",
+"sheet": [
+2800,
+2070
+],
+"thickness": 3.0,
+"grain": 0
+},
+{
+"name": "LES.SIVI 280*207",
+"code": "LES.17",
+"sheet": [
+2800,
+2070
+],
+"thickness": 3.0,
+"grain": 0
+},
+{
+"name": "LES.SREBRNI 280*207",
+"code": "LES.18",
+"sheet": [
+2800,
+2070
+],
+"thickness": 3.0,
+"grain": 0
+},
+{
+"name": "LES.TRESNJA MARBELA",
+"code": "LES.19",
+"sheet": [
+2800,
+2070
+],
+"thickness": 3.0,
+"grain": 1
+},
+{
+"name": "LES.TREŠNJA  280*207",
+"code": "LES.20",
+"sheet": [
+2800,
+2070
+],
+"thickness": 3.0,
+"grain": 1
+},
+{
+"name": "LES.VARONA  MDF 282*207",
+"code": "LES.21",
+"sheet": [
+2820,
+2070
+],
+"thickness": 3.0,
+"grain": 1
+},
+{
+"name": "LES.WENGE 280*207",
+"code": "LES.22",
+"sheet": [
+2800,
+2070
+],
+"thickness": 3.0,
+"grain": 1
+},
+{
+"name": "LES.WODLINE KREM 280*207",
+"code": "LES.23",
+"sheet": [
+2800,
+2070
+],
+"thickness": 3.2,
+"grain": 1
+},
+{
+"name": "LES.ZEBRANO SVETLI  280*207",
+"code": "LES.24",
+"sheet": [
+2800,
+2070
+],
+"thickness": 3.0,
+"grain": 1
+},
+{
+"name": "LES.SLJIVA",
+"code": "LES.26",
+"sheet": [
+2800,
+2070
+],
+"thickness": 3.0,
+"grain": 1
+},
+{
+"name": "LES.HRAST VANILA 280*207",
+"code": "LES.27",
+"sheet": [
+2800,
+2070
+],
+"thickness": 3.0,
+"grain": 1
+},
+{
+"name": "LES.HRAST SONOMA",
+"code": "LES.28",
+"sheet": [
+2800,
+2070
+],
+"thickness": 3.0,
+"grain": 1
+},
+{
+"name": "LES. ANTRACIT",
+"code": "LES29",
+"sheet": [
+2800,
+2070
+],
+"thickness": 3.0,
+"grain": 0
+},
+{
+"name": "LES.HRAST ZANA.ZLATNI 003",
+"code": "LES30",
+"sheet": [
+2800,
+2070
+],
+"thickness": 3.0,
+"grain": 1
+},
+{
+"name": "LES.BIJELI 280*207",
+"code": "LES31",
+"sheet": [
+2800,
+2070
+],
+"thickness": 3.0,
+"grain": 0
+},
+{
+"name": "MEDIJAPAN  4 MM",
+"code": "MDF-04MM",
+"sheet": [
+2600,
+2070
+],
+"thickness": 4.0,
+"grain": 0
+},
+{
+"name": "MEDIJAPAN   6 MM 280*207",
+"code": "MDF-06MM",
+"sheet": [
+2800,
+2070
+],
+"thickness": 6.0,
+"grain": 0
+},
+{
+"name": "MEDIJAPAN 8MM 280*207",
+"code": "MDF-08MM",
+"sheet": [
+2800,
+2070
+],
+"thickness": 8.0,
+"grain": 0
+},
+{
+"name": "MEDIJAPAN 10 MM 280*207",
+"code": "MDF-10MM",
+"sheet": [
+2800,
+2070
+],
+"thickness": 10.0,
+"grain": 0
+},
+{
+"name": "MEDIJAPAN 10 MM REBRASTI",
+"code": "MDF-10R",
+"sheet": [
+2800,
+1030
+],
+"thickness": 10.0,
+"grain": 1
+},
+{
+"name": "MEDIJAPAN 12 MM",
+"code": "MDF-12MM",
+"sheet": [
+2800,
+2070
+],
+"thickness": 12.0,
+"grain": 0
+},
+{
+"name": "MEDIJAPAN 16 MM 280*207",
+"code": "MDF-16MM",
+"sheet": [
+2800,
+2070
+],
+"thickness": 16.0,
+"grain": 0
+},
+{
+"name": "MEDIJAPAN 18 MM 280*207",
+"code": "MDF-18MM",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "MEDIJAPAN 19 MM 280*207",
+"code": "MDF-19MM",
+"sheet": [
+2800,
+2070
+],
+"thickness": 19.0,
+"grain": 0
+},
+{
+"name": "MEDIJAPAN 22 MM",
+"code": "MDF-22",
+"sheet": [
+2800,
+2070
+],
+"thickness": 22.0,
+"grain": 0
+},
+{
+"name": "MEDIJAPAN 25 MM",
+"code": "MDF-25MM",
+"sheet": [
+2800,
+2070
+],
+"thickness": 25.0,
+"grain": 0
+},
+{
+"name": "MEDIJAPAN 28 MM 280*207",
+"code": "MDF-28MM",
+"sheet": [
+2800,
+2070
+],
+"thickness": 28.0,
+"grain": 0
+},
+{
+"name": "MEDIJAPAN 30 MM",
+"code": "MDF-30MM",
+"sheet": [
+2800,
+2070
+],
+"thickness": 30.0,
+"grain": 0
+},
+{
+"name": "MEDIJAPAN 40 MM",
+"code": "MDF-40MM",
+"sheet": [
+2800,
+2070
+],
+"thickness": 40.0,
+"grain": 0
+},
+{
+"name": "MEDIJAPAN BELO/BELO 18 MM",
+"code": "MDF-B/B-18",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "MEDIJAPAN BELO/BELO 19 MM",
+"code": "MDF-B/B-19",
+"sheet": [
+2800,
+2070
+],
+"thickness": 19.0,
+"grain": 0
+},
+{
+"name": "MEDIJAPAN BELO 16 MM",
+"code": "MDF-BEL16",
+"sheet": [
+2800,
+2070
+],
+"thickness": 16.0,
+"grain": 0
+},
+{
+"name": "MEDIJAPAN BELO 18 MM",
+"code": "MDF-BEL18",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "MEDIJAPAN BELO 19 MM",
+"code": "MDF-BEL19",
+"sheet": [
+2800,
+2070
+],
+"thickness": 19.0,
+"grain": 0
+},
+{
+"name": "MDF SJAJ EGER ALABASTER U 104",
+"code": "MDF-SJ-104",
+"sheet": [
+2800,
+2070
+],
+"thickness": 19.0,
+"grain": 0
+},
+{
+"name": "MED SJAJ BELI 2800*2050",
+"code": "MDF-SJ-BE",
+"sheet": [
+2800,
+2050
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "MDF SJAJ BELA 8681 MG",
+"code": "MDFS-8681",
+"sheet": [
+2800,
+2050
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "OSB 09 MM",
+"code": "OSB-09",
+"sheet": [
+2500,
+1250
+],
+"thickness": 9.0,
+"grain": 0
+},
+{
+"name": "OSB 10 MM",
+"code": "OSB-10",
+"sheet": [
+2500,
+1250
+],
+"thickness": 10.0,
+"grain": 0
+},
+{
+"name": "OSB 12 MM",
+"code": "OSB-12",
+"sheet": [
+2500,
+1250
+],
+"thickness": 12.0,
+"grain": 0
+},
+{
+"name": "OSB 15MM",
+"code": "OSB-15",
+"sheet": [
+2500,
+1250
+],
+"thickness": 15.0,
+"grain": 0
+},
+{
+"name": "OSB 18MM",
+"code": "OSB-18",
+"sheet": [
+2500,
+1250
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "POSTFORMING 2800* 447",
+"code": "POST",
+"sheet": [
+2800,
+447
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "POSTFORMING 2800*597",
+"code": "POST-",
+"sheet": [
+2800,
+597
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "RADNA PLOCA",
+"code": "RPL",
+"sheet": [
+4100,
+620
+],
+"thickness": 38.0,
+"grain": 1
+},
+{
+"name": "SIROVA IVERICA 10 MM",
+"code": "S-10",
+"sheet": [
+2800,
+2070
+],
+"thickness": 10.0,
+"grain": 0
+},
+{
+"name": "SIROVA IVERICA 12 MM",
+"code": "S-12",
+"sheet": [
+2750,
+2070
+],
+"thickness": 12.0,
+"grain": 0
+},
+{
+"name": "SIROVA IVERICA 16 MM",
+"code": "S-16",
+"sheet": [
+2800,
+2070
+],
+"thickness": 16.0,
+"grain": 0
+},
+{
+"name": "SIROVA IVERICA 18 MM",
+"code": "S-18",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "MOOD BEZ SAMOA",
+"code": "SIT-001",
+"sheet": [
+2800,
+2120
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "MOOD CRNA 308",
+"code": "SIT-308",
+"sheet": [
+2800,
+2120
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "PORTLAND BELI  A 10",
+"code": "SIT-A10",
+"sheet": [
+2800,
+2120
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "PORTLAND SIVI A11",
+"code": "SIT-A11",
+"sheet": [
+2800,
+2120
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "LAGUNA MS A 61",
+"code": "SIT-A61",
+"sheet": [
+2800,
+2120
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "ARTSTONE OSSIDO DA 4",
+"code": "SIT-DA4",
+"sheet": [
+2800,
+2120
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "ALIGATOR SMEDJI DM 6",
+"code": "SIT-DM6",
+"sheet": [
+2800,
+2120
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "ALIGATOR BELI DP 8",
+"code": "SIT-DP8",
+"sheet": [
+2800,
+2120
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "HRAST PECAN DS6",
+"code": "SIT-DS6",
+"sheet": [
+2800,
+2120
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "MOOD BIANCO  OK2",
+"code": "SIT-OK2",
+"sheet": [
+2800,
+2120
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "ATLAS BELI OSS",
+"code": "SIT-OSS",
+"sheet": [
+2800,
+2120
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "ORAH SVETLI VANGUARD P23",
+"code": "SIT-P23",
+"sheet": [
+2800,
+2120
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "ORAH VANGUARD P 24",
+"code": "SIT-P24",
+"sheet": [
+2800,
+2120
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "ORAH TAMNI VANGUARD",
+"code": "SIT-P25",
+"sheet": [
+2800,
+2120
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "ATLAS SIVI P44",
+"code": "SIT-P44",
+"sheet": [
+2800,
+2120
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "ARTSTONE OXYDE TR9",
+"code": "SIT-TR9",
+"sheet": [
+2800,
+2120
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "TAMNO SIVA",
+"code": "SIVA",
+"sheet": [
+3060,
+2070
+],
+"thickness": 20.0,
+"grain": 0
+},
+{
+"name": "SJAJ BELA SNEG M 105",
+"code": "SJAJ-105",
+"sheet": [
+2800,
+2050
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "SJAJ BELA M 107",
+"code": "SJAJ-107",
+"sheet": [
+2800,
+2050
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "SJAJ CRNA M-200",
+"code": "SJAJ-200",
+"sheet": [
+2800,
+2050
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "SJAJ CHILI CRVENA M 207",
+"code": "SJAJ-207",
+"sheet": [
+2800,
+2050
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "SJAJ MARMARA PLAVA M 208",
+"code": "SJAJ-208",
+"sheet": [
+2800,
+2050
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "SJAJ NARANDZASTA M 215",
+"code": "SJAJ-215",
+"sheet": [
+2800,
+2050
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "SJAJ BORDO M 216",
+"code": "SJAJ-216",
+"sheet": [
+2800,
+2050
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "SJAJ LIMETA ZELENA M 219",
+"code": "SJAJ-219",
+"sheet": [
+2800,
+2050
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "SJAJ MAKIATO M 223",
+"code": "SJAJ-223",
+"sheet": [
+2800,
+2050
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "SJAJ VIOLA M 235",
+"code": "SJAJ-235",
+"sheet": [
+2800,
+2050
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "SJAJ ANTRACIT M 271",
+"code": "SJAJ-271",
+"sheet": [
+2800,
+2050
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "SJAJ SIVA 318",
+"code": "SJAJ-318",
+"sheet": [
+2800,
+2050
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "SJAJ SVETLO SIVA M 345",
+"code": "SJAJ-345",
+"sheet": [
+2800,
+2050
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "SJAJ IVORY M 348",
+"code": "SJAJ-348",
+"sheet": [
+2800,
+2050
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "SJAJ KASMIR M 350",
+"code": "SJAJ-350",
+"sheet": [
+2800,
+2050
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "SJAJ SATEN M 351",
+"code": "SJAJ-351",
+"sheet": [
+2800,
+2050
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "SJAJ LATTE M-352",
+"code": "SJAJ-352",
+"sheet": [
+2800,
+2050
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "SJAJ COBALT GREY",
+"code": "SJAJ-353",
+"sheet": [
+2800,
+2050
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "SJAJ ORAH LYON M -508",
+"code": "SJAJ-508",
+"sheet": [
+2800,
+2050
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "SJAJ TAMNA MASLINA M-549",
+"code": "SJAJ-549",
+"sheet": [
+2800,
+2050
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "SJAJ SVETLA NIT M 724",
+"code": "SJAJ-724",
+"sheet": [
+2800,
+2050
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "SJAJ TAMNA NIT 725",
+"code": "SJAJ-725",
+"sheet": [
+2800,
+2050
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "SKIN LAVA 5450 CB",
+"code": "SKIN-5450",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "SKIN BRONZA 5456",
+"code": "SKIN-5456",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "SKIN NOCE ATHENS 6424 SG",
+"code": "SKIN-6424",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "SKIN ROVERE BRUGES 6562 SG",
+"code": "SKIN-6562",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "SKIN ROVERE 6571 SG",
+"code": "SKIN-6571",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "SKIN TWIST TESSUTO 6572",
+"code": "SKIN-6572",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "SKIN OLMO JEREZ 6579 SG",
+"code": "SKIN-6579",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "SKIN FRASSINO DALI 6588",
+"code": "SKIN-6588",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "SKIN OLMO TAFIRA 6606",
+"code": "SKIN-6606",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "SKIN FRASSINO HIELO 6679 SW/BS",
+"code": "SKIN-6679",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "SKIN ROVERE KOTTINGHAM 6753RN/ST",
+"code": "SKIN-6753",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "6754 RN/ST",
+"code": "SKIN-6754",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "SPER PLOCA 4 MM B/B 244*125",
+"code": "SPER04",
+"sheet": [
+2440,
+1250
+],
+"thickness": 4.0,
+"grain": 1
+},
+{
+"name": "SPER PLOCA 6 MM B/B 244*125",
+"code": "SPER06",
+"sheet": [
+2440,
+1250
+],
+"thickness": 6.0,
+"grain": 1
+},
+{
+"name": "SPER PLOCA 10 MM B/B 244*125",
+"code": "SPER10",
+"sheet": [
+2440,
+1250
+],
+"thickness": 10.0,
+"grain": 1
+},
+{
+"name": "SPER PLOCA 15 MM B/B 244*125",
+"code": "SPER15",
+"sheet": [
+2440,
+1250
+],
+"thickness": 15.0,
+"grain": 1
+},
+{
+"name": "SPER PLOCA 18 MM B/B 244*125",
+"code": "SPER18",
+"sheet": [
+2440,
+1250
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "SPER PLOCA 18 MM 250*125",
+"code": "SPER181",
+"sheet": [
+2500,
+1250
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "SPER TOPOLA 30MM 25201870",
+"code": "SPER30MMT",
+"sheet": [
+2520,
+1870
+],
+"thickness": 30.0,
+"grain": 1
+},
+{
+"name": "SPER BREZA 152X152",
+"code": "SPER4B",
+"sheet": [
+1520,
+1520
+],
+"thickness": 4.0,
+"grain": 1
+},
+{
+"name": "SPER TOPOLA 4MM 2520  X 1870",
+"code": "SPER4MMT",
+"sheet": [
+2520,
+1870
+],
+"thickness": 4.0,
+"grain": 1
+},
+{
+"name": "SPER PLOCA TOPOLA 2520 X 1870",
+"code": "SPER6MMT",
+"sheet": [
+2520,
+1870
+],
+"thickness": 6.0,
+"grain": 1
+},
+{
+"name": "EG. DZINDZER U 093",
+"code": "U-093",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.ALABASTER U 104 ST9",
+"code": "U-104",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.PASTEL ZUTA U 107",
+"code": "U-107",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EGGER VANILA ZUTA U 108",
+"code": "U-108",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EGGER U 112 BEZ KORPUS",
+"code": "U-112",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.PERL BELA U 113",
+"code": "U-113",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.PAMUK BEZ U 113",
+"code": "U-113/10",
+"sheet": [
+2800,
+2070
+],
+"thickness": 10.0,
+"grain": 0
+},
+{
+"name": "EGE. ZUTA U114",
+"code": "U-114",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.JASMIN U 116",
+"code": "U-116",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.SUNČANO ŽUTA U 129",
+"code": "U-129",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG. CITRUS ZUTA U 131",
+"code": "U-131",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.SAFRAN U 140",
+"code": "U-140",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.DINJA U 147 ST 15",
+"code": "U-147",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.BEŽ PESAK U 156",
+"code": "U-156",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG. CURRY ZUTA U 163",
+"code": "U-163",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.BRAON BEZ U 200 ST9",
+"code": "U-200",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.SLJUNAK SIVA U 201 ST9",
+"code": "U-201",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.CAMEL U 204",
+"code": "U-204",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.KAPUCINO U 205",
+"code": "U-205",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.MALAGA U-206",
+"code": "U-206",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.KREM U 212",
+"code": "U-212",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.CAME BEZ U 216 ST9",
+"code": "U-216",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.KREM BEZ U 222",
+"code": "U-222",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.TAMNO CRVENA U 306",
+"code": "U-306",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.BURGUND U 311",
+"code": "U-311",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.ROZE U 315",
+"code": "U-315",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.ILOVACA U 317",
+"code": "U-317",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.KINA CRVENA U-321",
+"code": "U-321",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.SIGNALNO CRVENA U323 ST9",
+"code": "U-323",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "ANTIK ROZE U 325 ST9",
+"code": "U-325",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG. KARMIN U-328",
+"code": "U-328",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.MANDARINA U 329",
+"code": "U-329",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.PATLIDŽAN U 330",
+"code": "U-330",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.POMORANDZA U 332",
+"code": "U-332",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.ORHIDEJA U 336",
+"code": "U-336",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.FUKSIJA U 337",
+"code": "U-337",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.VINO",
+"code": "U-343",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG. SIENA NAR 350",
+"code": "U-350",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG. FLAMINGO U 363",
+"code": "U-363",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.INDIAN CRVENA U 390 ST9",
+"code": "U-390",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.VIOLET U 400",
+"code": "U-400",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.TYROLEAN PLAVA",
+"code": "U-504",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.ZAGASITO PLAVA U 507",
+"code": "U-507",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.LEDENO PLAVA U 510",
+"code": "U-510",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.BALTIČKO PLAVA 514",
+"code": "U-514",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.HORIZON U 522",
+"code": "U-522",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.LAPIS PLAVA U523",
+"code": "U-523",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.LAGUNA U 524",
+"code": "U-524",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.MARIN PLAVA U 525",
+"code": "U-525",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.PETROL U 532",
+"code": "U-532",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EGER U 538 OKEAN",
+"code": "U-538",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.CELICNO PLAVA U539",
+"code": "U-539",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "DENIM PLAVA U 540",
+"code": "U-540",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.MODRO PLAVA U 560 ST9",
+"code": "U-560",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.SUMSKO ZELENA U 606",
+"code": "U-606",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.VODENO ZELENA U 610",
+"code": "U-610",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.PAPRAT ZELENA U 612",
+"code": "U-612",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG WASABI U-617",
+"code": "U-617",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.JABUKA ZELENA U 625",
+"code": "U-625",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.KIVI U 626",
+"code": "U-626",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.ZELENA U 628",
+"code": "U-628",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.LIMUN ZELENA U 630",
+"code": "U-630",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG. MASLINA 631",
+"code": "U-631",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.TRAVA ZELENA U 632",
+"code": "U-632",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.MAHOVINA U 635",
+"code": "U-635",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.FJORD ZELENA U 636 ST9",
+"code": "U-636",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.NIJAGARA ZELENA U 646",
+"code": "U-646",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.SMARAGD ZELENA U 655 ST9",
+"code": "U-655",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.KASMIR U 702 ST9",
+"code": "U-702",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.SVILENO SIVA U 707 ST9",
+"code": "U-707",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.SVETLO SIVA U 708",
+"code": "U-708",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.KAMENO SIVA U727",
+"code": "U-727",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.PRASNJAVO SIVA U732",
+"code": "U-732",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.LAVA U 741",
+"code": "U-741",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.TARTUF BRAON U 748",
+"code": "U-748",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.SIVA U 750 ST9",
+"code": "U-750",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.PERL SIVA U-763 ST 9",
+"code": "U-763",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG. CUBANIT SIVA U 767",
+"code": "U-767",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.BELO SIVA U 775",
+"code": "U-775",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.MONUMENT SIVA U 780",
+"code": "U-780",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.ARKTIK SIVA U 788 ST 9",
+"code": "U-788",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.TAMNO BRAON U 818",
+"code": "U-818",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.NUDE KARAMELA U 830",
+"code": "U-830",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.SOFT CRNA U899 ST9",
+"code": "U-899",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.ONIX SIVI U960",
+"code": "U-960",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.GRAFIT SIVA TEXT ST 19",
+"code": "U-961ST19",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.GRAFIT U 961 ST2",
+"code": "U-961ST2",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.DIJAMANT SIVA U963",
+"code": "U-963",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.KARBON SIVA U968 ST9",
+"code": "U-968",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.CRNA KORA U 999",
+"code": "U-999",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG. CRNA TEXT. U999 ST38",
+"code": "U-999ST38",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "ULTRAPLAST TREŠNJA",
+"code": "ULT.",
+"sheet": [
+2750,
+1000
+],
+"thickness": 4.0,
+"grain": 1
+},
+{
+"name": "VARIO KAPAK BIANCO 631 SJAJ",
+"code": "VARI-631",
+"sheet": [
+2800,
+1220
+],
+"thickness": 19.0,
+"grain": 0
+},
+{
+"name": "EG. BELA KORA W 1000 ST9",
+"code": "W-1000",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.BELA GLAT W 1000 SM",
+"code": "W-1000.",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG. BELA KORA W 1000 ST9 / 10 MM",
+"code": "W-1000/10",
+"sheet": [
+2800,
+2070
+],
+"thickness": 10.0,
+"grain": 0
+},
+{
+"name": "EG.BELA KORA W 1000 / 16 MM",
+"code": "W-1000/16",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG. BELA KORA W 1000 25MM",
+"code": "W-1000/25",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EGE PREM BELA SJAJ W 1000",
+"code": "W-1000PG",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.PREMIUM BELA KOZA ST16",
+"code": "W-1000ST16",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.PREMIUM BELA ST 19",
+"code": "W-1000ST19",
+"sheet": [
+2800,
+2070
+],
+"thickness": 20.0,
+"grain": 1
+},
+{
+"name": "EG.PREMIUM BELA ST22 TEXT.",
+"code": "W-1000ST22",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.PREMIUM BELA ST38 TEXT",
+"code": "W-1000ST38",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.ALPSKO BELA W 1100",
+"code": "W-1100ST9",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.PORCELAN W1200 ST9",
+"code": "W-1200",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EGE.BELA W-908 SM",
+"code": "W-908",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG. BELA KORA W908 ST2",
+"code": "W-908-ST2",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EGE.OSNOVNA BELA TEX.908",
+"code": "W-908TEX",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 1
+},
+{
+"name": "EG.BELA KORPUS W 911 GLAT",
+"code": "W-911SM",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.BELA KORPUS W 911 KORA",
+"code": "W-911ST2",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.BELA GLAT 980 SM",
+"code": "W-980",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "EG.BELA KORA ST2",
+"code": "W-980ST2",
+"sheet": [
+2800,
+2070
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "WOD F 8815 DUGA ZELENA",
+"code": "W-F8815",
+"sheet": [
+2660,
+2100
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "WOD U 1560 LIMUN ZELENA",
+"code": "W-U1560",
+"sheet": [
+2655,
+2100
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "WODEGO SVETLO ZELENA",
+"code": "W-U1818",
+"sheet": [
+2655,
+2100
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "YLDIZ BELA SJAJ 068",
+"code": "YLDIZ-068",
+"sheet": [
+2800,
+1220
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "YLDIZ GOBI SJAJ 144",
+"code": "YLDIZ-144",
+"sheet": [
+2800,
+1220
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "YLDIZ FUMEL SJAJ 429",
+"code": "YLDIZ-429",
+"sheet": [
+2800,
+1220
+],
+"thickness": 18.0,
+"grain": 0
+},
+{
+"name": "ZIDNA OBLOGA KRONO 003",
+"code": "ZID-003",
+"sheet": [
+4100,
+640
+],
+"thickness": 10.0,
+"grain": 1
+},
+{
+"name": "ZIDNA OBLOGA 588 HRAST CANYON",
+"code": "ZID-588",
+"sheet": [
+4100,
+640
+],
+"thickness": 10.0,
+"grain": 1
+},
+{
+"name": "SAHARA CREAM",
+"code": "AGT3019",
+"sheet": [
+2800,
+1220
+],
+"thickness": 19.0,
+"grain": 0
+}
+],
+"edgeBands": [
+{
+"name": "ABS  0.5MM",
+"code": "ABS 0.5"
+},
+{
+"name": "ABS  22 MM",
+"code": "ABS 22"
+},
+{
+"name": "ABS 1.3",
+"code": "010"
+},
+{
+"name": "ABS 33 MM",
+"code": "ABS 33"
+},
+{
+"name": "ABS 45MM",
+"code": "ABS 45MM"
+},
+{
+"name": "ABS LASER 1.3",
+"code": "ABS LAS"
+},
+{
+"name": "ABS PREDFREZER 22 MM",
+"code": "ABS FR22"
+},
+{
+"name": "ABS PREDFREZER 33 MM",
+"code": "ABS FR 33"
+},
+{
+"name": "FURNIR 22 MM",
+"code": "FUR 22"
+},
+{
+"name": "MELAMIN",
+"code": "MEL"
+}
+]
+}
