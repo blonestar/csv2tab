@@ -80,6 +80,7 @@ interface FileEntry {
   wtInit?: boolean;
   fname?: string;
   edits: Map<string, Edit>;
+  touched?: boolean; // korisnik je menjao mapiranje, materijale, smer vlakana ili ime fajla
   conv?: ConvertResult;
   compare?: { name: string; parts: WtPart[] };
 }
@@ -248,9 +249,30 @@ async function addFiles(list: FileList | File[]) {
   }
 }
 
+function isDirty(f: FileEntry): boolean {
+  return !!f.touched || f.edits.size > 0;
+}
+
+function confirmLoss(list: FileEntry[]): boolean {
+  const dirty = list.filter(isDirty);
+  if (!dirty.length) return true;
+  const names = dirty.map((f) => `• ${f.name}`).join('\n');
+  return confirm(`Izmene u sledećim fajlovima će biti izgubljene:\n${names}\n\nDa li želite da nastavite?`);
+}
+
 function removeFile(id: number) {
-  state.files = state.files.filter((f) => f.id !== id);
+  const f = state.files.find((x) => x.id === id);
+  if (!f || !confirmLoss([f])) return;
+  state.files = state.files.filter((x) => x.id !== id);
   if (state.activeId === id) state.activeId = state.files[0]?.id ?? -1;
+  renderAll();
+}
+
+function removeAll() {
+  if (!confirmLoss(state.files)) return;
+  state.files = [];
+  state.activeId = -1;
+  state.tab = 'parts';
   renderAll();
 }
 
@@ -346,6 +368,7 @@ function renderAll() {
 function renderFileList() {
   const ul = $('file-list');
   ul.hidden = state.files.length === 0;
+  $('remove-all').hidden = state.files.length === 0;
   ul.innerHTML = state.files
     .map(
       (f) => `<li data-rough="tag" class="${f.id === state.activeId ? 'active' : ''}">
@@ -976,13 +999,17 @@ function onWtMatChange(inp: HTMLInputElement) {
   if (!f || !catalog || inp.dataset.wtmat === undefined) return;
   const m = inp.dataset.wtmat;
   const v = inp.value.trim();
-  if (!v) delete f.wtMat[m];
+  if (!v) {
+    delete f.wtMat[m];
+    f.touched = true;
+  }
   else {
     const hit = catalog.materials.find((x) => materialLabel(x) === v) ?? searchMaterials(catalog, v, 1)[0];
     if (hit) {
       f.wtMat[m] = hit;
       f.grainMat[m] = hit.grain ? 1 : 0;
       f.conv = undefined;
+      f.touched = true;
     }
   }
   renderAll();
@@ -1136,6 +1163,13 @@ function init() {
   // spreči da browser otvori fajl ako se ispusti pored zone
   window.addEventListener('dragover', (e) => e.preventDefault());
   window.addEventListener('drop', (e) => e.preventDefault());
+  // refresh, zatvaranje taba ili Back: browser pita da li da napusti stranicu (tekst poruke bira browser)
+  window.addEventListener('beforeunload', (e) => {
+    if (!state.files.length) return;
+    e.preventDefault();
+    e.returnValue = '';
+  });
+  $('remove-all').addEventListener('click', removeAll);
 
   $('file-list').addEventListener('click', (e) => {
     const t = e.target as HTMLElement;
@@ -1226,6 +1260,7 @@ function init() {
     if (!f || !conv || !t.dataset.map) return;
     f.mapSel = { ...conv.mapping, [t.dataset.map as Field]: Number(t.value) };
     f.conv = undefined;
+    f.touched = true;
     f.edits.clear();
     renderAll();
   });
@@ -1235,6 +1270,7 @@ function init() {
     if (!f || t.dataset.mat === undefined) return;
     f.grainMat[t.dataset.mat] = t.checked ? 1 : 0;
     f.conv = undefined;
+    f.touched = true;
     renderAll();
   });
   $<HTMLInputElement>('c-merge').addEventListener('change', (e) => {
@@ -1286,7 +1322,9 @@ function init() {
   });
   $<HTMLInputElement>('x-fname').addEventListener('input', (e) => {
     const f = active();
-    if (f) f.fname = (e.target as HTMLInputElement).value;
+    if (!f) return;
+    f.fname = (e.target as HTMLInputElement).value;
+    f.touched = true;
   });
   void loadCatalog();
   $('btn-cmp').addEventListener('click', () => $<HTMLInputElement>('cmp-input').click());
