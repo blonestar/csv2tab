@@ -1,54 +1,67 @@
 /* csv2tab — "skica": papir, olovka, marker. Podaci ostaju u čitljivom monospace-u. */
+/*
+ * Teme: <html data-theme="<id>" data-scheme="light|dark"> (postavlja src/theme.ts).
+ * Svaka tema definiše iste boje za obe varijante; nova tema = novi par blokova ispod
+ * + unos u THEMES u src/theme.ts.
+ */
 :root {
-  color-scheme: light dark;
-  --paper: #f7f1e1;
-  --paper-hi: #fffcf0;
-  --grid-minor: rgba(70, 110, 170, 0.1);
-  --grid-major: rgba(70, 110, 170, 0.2);
-  --line: #2a2a33;
-  --fg: #24242c;
-  --muted: #6d675a;
-  --marker: #ffe35c;
-  --marker-a: rgba(255, 227, 92, 0.78);
-  --hatch: #ffd54a;
-  --red: #d2362f;
-  --blue: #3a6db5;
-  --green: #3a8c58;
-  --faint: rgba(42, 42, 51, 0.28);
-  --th: #efe8d2;
-  --tab: rgba(240, 120, 120, 0.4);
-  --dec: rgba(110, 170, 235, 0.4);
-  --sus: rgba(200, 130, 225, 0.4);
-  --rag: rgba(255, 150, 130, 0.22);
-  --ok: rgba(120, 200, 140, 0.28);
   --f-hand: 'Caveat', 'Patrick Hand', 'Comic Sans MS', cursive;
   --f-body: 'Patrick Hand', 'Segoe Print', 'Comic Sans MS', system-ui, sans-serif;
   --f-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   --wobble: 255px 15px 225px 15px / 15px 225px 15px 255px;
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-    --paper: #123560;
-    --paper-hi: #174376;
-    --grid-minor: rgba(255, 255, 255, 0.07);
-    --grid-major: rgba(255, 255, 255, 0.15);
-    --line: #e8f1ff;
-    --fg: #e8f1ff;
-    --muted: #a6c0e4;
-    --marker: #f6d54a;
-    --marker-a: rgba(246, 213, 74, 0.38);
-    --hatch: #4f86cc;
-    --red: #ff7d6e;
-    --blue: #8ec5ff;
-    --green: #7fe0a0;
-    --faint: rgba(232, 241, 255, 0.3);
-    --th: #1a4a82;
-    --tab: rgba(255, 120, 120, 0.35);
-    --dec: rgba(120, 180, 255, 0.35);
-    --sus: rgba(210, 140, 240, 0.35);
-    --rag: rgba(255, 140, 120, 0.2);
-    --ok: rgba(120, 220, 150, 0.22);
-  }
+:root[data-scheme='light'] { color-scheme: light; }
+:root[data-scheme='dark'] { color-scheme: dark; }
+
+/* Skica, svetla: reciklirani papir (žućkast, sa vlaknima) */
+:root[data-theme='sketch'] {
+  --paper: #ece2c4;
+  --paper-hi: #f6efd8;
+  --paper-texture: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 0.42 0 0 0 0 0.34 0 0 0 0 0.2 0 0 0 1.6 -0.9'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23f)' opacity='0.45'/%3E%3C/svg%3E");
+  --grid-minor: rgba(80, 100, 140, 0.1);
+  --grid-major: rgba(80, 100, 140, 0.2);
+  --line: #2b2a30;
+  --fg: #26241f;
+  --muted: #6c624c;
+  --marker: #ffe35c;
+  --marker-a: rgba(255, 222, 70, 0.72);
+  --hatch: #f7c93a;
+  --on-primary: #1d1d22;
+  --red: #c9342c;
+  --blue: #36649f;
+  --green: #36814f;
+  --faint: rgba(43, 42, 48, 0.28);
+  --th: #e3d7b3;
+  --tab: rgba(240, 120, 120, 0.4);
+  --dec: rgba(110, 170, 235, 0.4);
+  --sus: rgba(200, 130, 225, 0.4);
+  --rag: rgba(255, 150, 130, 0.22);
+  --ok: rgba(120, 200, 140, 0.28);
+}
+/* Skica, tamna: blueprint */
+:root[data-theme='sketch'][data-scheme='dark'] {
+  --paper: #123560;
+  --paper-hi: #174376;
+  --paper-texture: none;
+  --grid-minor: rgba(255, 255, 255, 0.07);
+  --grid-major: rgba(255, 255, 255, 0.15);
+  --line: #e8f1ff;
+  --fg: #e8f1ff;
+  --muted: #a6c0e4;
+  --marker: #f6d54a;
+  --marker-a: rgba(246, 213, 74, 0.38);
+  --hatch: #4f86cc;
+  --on-primary: #fff;
+  --red: #ff7d6e;
+  --blue: #8ec5ff;
+  --green: #7fe0a0;
+  --faint: rgba(232, 241, 255, 0.3);
+  --th: #1a4a82;
+  --tab: rgba(255, 120, 120, 0.35);
+  --dec: rgba(120, 180, 255, 0.35);
+  --sus: rgba(210, 140, 240, 0.35);
+  --rag: rgba(255, 140, 120, 0.2);
+  --ok: rgba(120, 220, 150, 0.22);
 }
 
 * { box-sizing: border-box; }
@@ -59,15 +72,20 @@ body {
   font: 18px/1.45 var(--f-body);
   background-color: var(--paper);
   background-image:
+    var(--paper-texture, none),
     linear-gradient(var(--grid-major) 1px, transparent 1px),
     linear-gradient(90deg, var(--grid-major) 1px, transparent 1px),
     linear-gradient(var(--grid-minor) 1px, transparent 1px),
     linear-gradient(90deg, var(--grid-minor) 1px, transparent 1px);
-  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-size: 240px 240px, 100px 100px, 100px 100px, 20px 20px, 20px 20px;
   min-height: 100vh;
 }
 .top, main, footer { max-width: 1240px; margin: 0 auto; padding: 0 18px; }
-.top { padding-top: 22px; }
+.top { padding-top: 22px; position: relative; }
+.theme-picker { position: absolute; top: 18px; right: 18px; display: flex; gap: 10px; align-items: center; z-index: 1; }
+.theme-picker select { width: auto; font-size: 15px; }
+.theme-mode { display: flex; gap: 6px; }
+.theme-mode .btn { font-size: 15px; padding: 1px 9px; }
 
 h1, h2, summary { font-family: var(--f-hand); font-weight: 700; color: var(--fg); }
 h1.title {
@@ -144,8 +162,7 @@ code { font-family: var(--f-mono); font-size: 0.8em; background: var(--th); padd
   color: var(--fg); cursor: pointer; border-radius: 6px;
 }
 .btn:hover:not(:disabled) { animation: shake 0.4s ease-in-out; }
-.btn.primary { font-weight: 700; color: #1d1d22; }
-@media (prefers-color-scheme: dark) { .btn.primary { color: #fff; } }
+.btn.primary { font-weight: 700; color: var(--on-primary); }
 .btn.small { font-size: 16px; padding: 2px 10px; }
 .btn:disabled { opacity: 0.45; cursor: not-allowed; }
 .btn:focus-visible, select:focus-visible, input:focus-visible, summary:focus-visible { outline: 2px dashed var(--red); outline-offset: 3px; }
@@ -270,6 +287,7 @@ footer .app-version { margin-top: 4px; font-size: 13px; opacity: .8; }
 [hidden] { display: none !important; }
 @media (max-width: 640px) {
   .top, main, footer { padding: 0 10px; }
+  .theme-picker { position: static; justify-content: flex-end; margin-bottom: 8px; }
   .card { padding: 12px; }
   h1.title { font-size: 54px; }
   body { font-size: 17px; }

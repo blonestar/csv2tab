@@ -1,6 +1,7 @@
 import './fonts';
 import './style.css';
 import { initSketch, sketchAll } from './sketch';
+import { initTheme } from './theme';
 import { zipSync } from 'fflate';
 import { analyze, hasTabOrNewline, isDecimalComma, isSuspicious, type Stats } from './lib/analyze';
 import {
@@ -1282,4 +1283,5 @@ function init() {
 }
 
 init();
+initTheme();
 initSketch();
