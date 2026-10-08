@@ -1,0 +1,12 @@
+/* og slika je uvek svetla (papir), bez animacije olovke */
+:root { color-scheme: light; }
+html, body.og { width: 1200px; height: 630px; overflow: hidden; }
+body.og { background-size: 120px 120px, 120px 120px, 24px 24px, 24px 24px; }
+svg.draw path, svg.rough.draw path { animation: none !important; stroke-dasharray: none !important; }
+.og-card { padding: 54px 80px 0; }
+.og h1.title { font-size: 150px; }
+.og h1.title::after { height: 34px; bottom: 14px; }
+.og-sub { font-family: var(--f-hand); font-size: 50px; margin: 6px 0 0; }
+.og-sub b { color: var(--red); }
+.og .flow { max-width: 860px; margin: 8px 0 0 -10px; }
+.og .privacy { font-size: 28px; max-width: none; display: inline-flex; margin: 6px 0 0; padding: 10px 20px; }
