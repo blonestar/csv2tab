@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="description" content="csv2tab pretvara CSV i ODS krojne liste u binarni WT Input .tab (uz sporedni TSV izvoz). Sve se obrađuje u vašem browseru." />
+    <meta name="description" content="csv2tab pretvara CSV, ODS i Excel krojne liste u binarni WT Input .tab (uz sporedni TSV izvoz). Sve se obrađuje u vašem browseru." />
     <script>
       /* tema pre prvog iscrtavanja (bez treptanja); ista logika kao src/theme.ts */
       (function () {
@@ -15,22 +15,22 @@
         d.dataset.scheme = m;
       })();
     </script>
-    <title>csv2tab — CSV / ODS u WT Input .tab</title>
+    <title>csv2tab — CSV / ODS / Excel u WT Input .tab</title>
     <!-- preview pri deljenju (og.png se generiše iz og/index.html: npm run og); URL-ovi moraju biti apsolutni -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="csv2tab" />
     <meta property="og:locale" content="sr_RS" />
     <meta property="og:url" content="https://csv2tab.vercel.app/" />
-    <meta property="og:title" content="csv2tab — CSV / ODS u WT Input .tab" />
-    <meta property="og:description" content="Pretvara CSV i ODS krojne liste u binarni WT Input .tab. Sve se obrađuje u vašem browseru — fajl ne napušta računar." />
+    <meta property="og:title" content="csv2tab — CSV / ODS / Excel u WT Input .tab" />
+    <meta property="og:description" content="Pretvara CSV, ODS i Excel krojne liste u binarni WT Input .tab. Sve se obrađuje u vašem browseru — fajl ne napušta računar." />
     <meta property="og:image" content="https://csv2tab.vercel.app/og.png" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="csv2tab: skica CSV i ODS fajla koji se u browseru pretvaraju u WT Input TAB fajl" />
+    <meta property="og:image:alt" content="csv2tab: skica CSV, ODS i Excel fajla koji se u browseru pretvaraju u WT Input TAB fajl" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="csv2tab — CSV / ODS u WT Input .tab" />
-    <meta name="twitter:description" content="Pretvara CSV i ODS krojne liste u binarni WT Input .tab. Sve se obrađuje u vašem browseru." />
+    <meta name="twitter:title" content="csv2tab — CSV / ODS / Excel u WT Input .tab" />
+    <meta name="twitter:description" content="Pretvara CSV, ODS i Excel krojne liste u binarni WT Input .tab. Sve se obrađuje u vašem browseru." />
     <meta name="twitter:image" content="https://csv2tab.vercel.app/og.png" />
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M5 4h16l6 6v18H5z' fill='%23fff6c9' stroke='%23333' stroke-width='2' stroke-linejoin='round'/%3E%3Cpath d='M9 15h14M9 20h14M9 25h9' stroke='%23333' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E" />
   </head>
@@ -44,7 +44,7 @@
     <header class="top">
       <div id="theme-picker" class="theme-picker"></div>
       <h1 class="title">csv2tab</h1>
-      <svg id="flow" class="flow" viewBox="0 0 640 160" role="img" aria-label="Skica: CSV i ODS fajl se pretvaraju u WT Input TAB fajl"></svg>
+      <svg id="flow" class="flow" viewBox="0 0 640 160" role="img" aria-label="Skica: CSV, ODS i Excel fajl se pretvaraju u WT Input TAB fajl"></svg>
       <p class="intro">
         <svg class="icon" data-icon="lock" width="28" height="28" viewBox="0 0 28 28"></svg>
         <span>Pretvara <b>CSV</b>, <b>ODS</b> i <b>Excel</b> krojne liste u binarni <b>WT Input .tab</b>. Sve se obrađuje u vašem
@@ -58,8 +58,8 @@
         <div id="dropzone" class="dropzone" data-rough="drop" tabindex="0" role="button" aria-label="Izaberite ili prevucite fajlove">
           <p><strong>Prevucite fajlove ovde</strong> ili</p>
           <button type="button" id="pick" class="btn primary" data-rough="btn">Izaberite fajlove</button>
-          <p class="hint">Podržano: .csv, .txt, .ods (krojna lista) i .tab (samo pregled / izmena)</p>
-          <input id="file-input" type="file" accept=".csv,.txt,.tsv,.tab,.ods" multiple hidden />
+          <p class="hint">Podržano: .csv, .txt, .ods, .xlsx (krojna lista) i .tab (samo pregled / izmena)</p>
+          <input id="file-input" type="file" accept=".csv,.txt,.tsv,.tab,.ods,.xlsx" multiple hidden />
         </div>
         <ul id="file-list" class="file-list" hidden></ul>
         <button type="button" id="remove-all" class="btn small remove-all" data-rough="btn" hidden>Ukloni sve fajlove</button>
@@ -77,7 +77,7 @@
               <label class="csv-only">Separator
                 <select id="sel-delimiter"></select>
               </label>
-              <label class="ods-only">List
+              <label class="sheet-only">List
                 <select id="sel-sheet"></select>
               </label>
             </div>

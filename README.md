@@ -1,6 +1,6 @@
 # csv2tab
 
-Web aplikacija koja pretvara **CSV** i **ODS** krojne liste (export iz programa za projektovanje) u binarni
+Web aplikacija koja pretvara **CSV**, **ODS** i **Excel (.xlsx)** krojne liste (export iz programa za projektovanje) u binarni
 **WT Input `.tab`** fajl (krojne liste za pločaste materijale). Sva obrada se izvršava u browseru — fajl nikad ne napušta
 korisnikov računar. UI je na srpskom (latinica), u „sketch" stilu (rough.js, rukopisni fontovi, milimetarski papir).
 Tema ima svetlu varijantu (reciklirani papir) i tamnu (blueprint). U headeru se bira Sistem / Svetla / Tamna, a izbor se
@@ -8,7 +8,7 @@ pamti u browseru.
 
 ## Šta radi
 
-1. Učitava `.csv` (UTF-8/windows-1250, `;`) i `.ods`; kolone se mapiraju po nazivu zaglavlja (uz ručni izbor; fajl bez
+1. Učitava `.csv` (UTF-8/windows-1250, `;`), `.ods` i Excel `.xlsx`; kolone se mapiraju po nazivu zaglavlja (uz ručni izbor; fajl bez
    zaglavlja dobija podrazumevani raspored). Brojevi sa decimalnim zarezom i jedinicom `mm`, debljina kanta iz
    `(1,0 mm x 19,0 mm)` ili sufiksa `..._0,5mm`.
 2. Pravi **zapise** (Dužina, Širina, Kant uz dužinu / širinu, Prati teksturu, Kom, Oznaka): iste delove spaja
@@ -59,7 +59,7 @@ Potreban je Node 20+.
 - `src/lib/parts.ts` — redovi → zapisi (mapiranje kolona, parsiranje, tabela kantova, spajanje)
 - `src/lib/compare.ts` — poređenje dva skupa zapisa
 - `src/lib/catalog.ts` + `src/data/wt-catalog.json` — WT katalog materijala/traka (JSON se ne menja ručno)
-- `src/lib/csv.ts`, `ods.ts`, `clean.ts`, `tsv.ts`, `encoding.ts`, `analyze.ts` — ulaz, čišćenje, sporedni TSV izvoz
+- `src/lib/csv.ts`, `ods.ts`, `xlsx.ts`, `clean.ts`, `tsv.ts`, `encoding.ts`, `analyze.ts` — ulaz, čišćenje, sporedni TSV izvoz
 - `src/sketch.ts`, `src/fonts.ts`, `src/style.css` — „sketch" stil
 - `src/worker.ts` — Web Worker za parsiranje CSV-a
 - `tests/` — vitest testovi
@@ -75,6 +75,6 @@ Projekat nazovite `csv2tab` (→ `csv2tab.vercel.app`). Vercel sam prepoznaje Vi
 
 ## Ograničenja
 
-- ODS se parsira u glavnoj niti (`DOMParser` ne postoji u Web Workeru); CSV ide kroz Worker.
+- ODS i XLSX se parsiraju u glavnoj niti (`DOMParser` ne postoji u Web Workeru); CSV ide kroz Worker.
 - Tabela zapisa prikazuje prvih 3000 zapisa (izvoz sadrži sve).
 - Kombinacije kanta van tabele daju šifru 0 uz upozorenje.

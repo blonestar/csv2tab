@@ -192,10 +192,12 @@ function arrow(rc: ReturnType<typeof rough.svg>, svg: SVGElement, x1: number, y1
 export function drawFlow(svg: SVGSVGElement) {
   while (svg.firstChild) svg.removeChild(svg.firstChild);
   const rc = rough.svg(svg);
-  filePage(rc, svg, 20, 18, 90, 118, 'CSV', 11, cssVar('--marker'));
-  filePage(rc, svg, 128, 30, 90, 118, 'ODS', 23, cssVar('--blue'));
-  arrow(rc, svg, 240, 82, 360, 86, 5);
-  filePage(rc, svg, 390, 22, 100, 126, 'TAB', 37, cssVar('--green'));
+  // ulazni fajlovi se delimično preklapaju (lepeza), kasniji crta preko ranijeg
+  filePage(rc, svg, 8, 8, 90, 118, 'CSV', 11, cssVar('--marker'));
+  filePage(rc, svg, 82, 19, 90, 118, 'ODS', 23, cssVar('--blue'));
+  filePage(rc, svg, 156, 30, 90, 118, 'XLSX', 29, cssVar('--green'));
+  arrow(rc, svg, 262, 86, 366, 88, 5);
+  filePage(rc, svg, 390, 22, 100, 126, 'TAB', 37, cssVar('--red'));
   // sitni crtež tabele pored TAB-a
   const ink = cssVar('--line');
   for (let i = 0; i < 4; i++)
@@ -203,7 +205,7 @@ export function drawFlow(svg: SVGSVGElement) {
   for (let i = 0; i < 4; i++)
     svg.appendChild(rc.line(520 + i * 33, 40, 520 + i * 33, 106, { stroke: ink, strokeWidth: 1.2, roughness: 1.5, seed: 90 + i }));
   const note = document.createElementNS(SVGNS, 'text');
-  note.setAttribute('x', '300');
+  note.setAttribute('x', '314');
   note.setAttribute('y', '58');
   note.setAttribute('text-anchor', 'middle');
   note.setAttribute('class', 'flow-note');
