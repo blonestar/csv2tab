@@ -223,6 +223,10 @@ function drawIcon(svg: SVGSVGElement) {
     svg.appendChild(rc.circle(14, 14, 22, { stroke: red, strokeWidth: 1.8, roughness: 1.6, seed }));
     svg.appendChild(rc.line(14, 7, 14, 15, { stroke: red, strokeWidth: 2.4, roughness: 1, seed }));
     svg.appendChild(rc.circle(14, 20, 1.6, { stroke: red, fill: red, fillStyle: 'solid', strokeWidth: 1, roughness: 0.5, seed }));
+  } else if (kind === 'lock') {
+    const ink = cssVar('--line');
+    svg.appendChild(rc.rectangle(5, 13, 18, 12, { stroke: ink, strokeWidth: 1.6, roughness: 1.2, seed, fill: cssVar('--marker'), fillStyle: 'hachure' }));
+    svg.appendChild(rc.path('M 9 13 L 9 9 Q 14 1 19 9 L 19 13', { stroke: ink, strokeWidth: 1.6, roughness: 1, seed }));
   }
   prepare(svg);
   svg.classList.add('draw');
