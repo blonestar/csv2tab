@@ -15,6 +15,7 @@ import {
 import { compareParts } from './lib/compare';
 import { encodeOutput, type InputEncoding, type OutputEncoding } from './lib/encoding';
 import { padRows, parseOds, type OdsSheet } from './lib/ods';
+import { parseXlsx } from './lib/xlsx';
 import {
   DEFAULT_EDGE_RULES,
   FIELDS,
@@ -53,7 +54,7 @@ const MAX_PREVIEW_COLS = 200;
 interface FileEntry {
   id: number;
   name: string;
-  kind: 'csv' | 'ods' | 'tab';
+  kind: 'csv' | 'ods' | 'xlsx' | 'tab';
   size: number;
   bytes: Uint8Array;
   encodingSel: 'auto' | InputEncoding;
@@ -67,7 +68,7 @@ interface FileEntry {
   detectedEnc?: InputEncoding;
   detectedDelim?: string;
   hadBom?: boolean;
-  // ODS
+  // ODS / XLSX
   sheets?: OdsSheet[];
   sheetStats?: (Stats | undefined)[];
   // .tab (samo pregled)
@@ -159,13 +160,18 @@ function active(): FileEntry | undefined {
   return state.files.find((f) => f.id === state.activeId);
 }
 
+/** Tabelarni fajl sa listovima (ODS ili Excel). */
+function isSheets(f: FileEntry): boolean {
+  return f.kind === 'ods' || f.kind === 'xlsx';
+}
+
 function currentRows(f: FileEntry): string[][] | undefined {
-  if (f.kind === 'ods') return f.sheets?.[f.sheetIdx]?.rows;
+  if (isSheets(f)) return f.sheets?.[f.sheetIdx]?.rows;
   return f.rows;
 }
 
 function currentStats(f: FileEntry): Stats | undefined {
-  if (f.kind === 'ods') {
+  if (isSheets(f)) {
     if (!f.sheets) return undefined;
     f.sheetStats ??= [];
     return (f.sheetStats[f.sheetIdx] ??= analyze(f.sheets[f.sheetIdx].rows));
@@ -198,7 +204,7 @@ async function addFiles(list: FileList | File[]) {
   for (const file of Array.from(list)) {
     const lower = file.name.toLowerCase();
     const bytes = new Uint8Array(await file.arrayBuffer());
-    let kind: FileEntry['kind'] = lower.endsWith('.ods') ? 'ods' : 'csv';
+    let kind: FileEntry['kind'] = lower.endsWith('.ods') ? 'ods' : lower.endsWith('.xlsx') ? 'xlsx' : 'csv';
     let tabParts: PartRecord[] | undefined;
     let tabWarnings: string[] | undefined;
     if (lower.endsWith('.tab')) {
@@ -232,12 +238,17 @@ async function addFiles(list: FileList | File[]) {
     state.tab = 'parts';
     renderAll();
     if (kind === 'tab') continue;
-    if (f.kind === 'ods') {
-      // DOMParser nije dostupan u Web Workeru, pa se ODS parsira u glavnoj niti.
+    if (lower.endsWith('.xls')) {
+      f.loading = false;
+      f.error = 'Stari Excel format (.xls) nije podržan. Sačuvajte fajl kao .xlsx, .ods ili .csv.';
+      renderAll();
+    } else if (isSheets(f)) {
+      // DOMParser nije dostupan u Web Workeru, pa se ODS/XLSX parsira u glavnoj niti.
       await new Promise((r) => setTimeout(r, 10));
       try {
-        f.sheets = parseOds(bytes).map((s) => ({ name: s.name, rows: padRows(s.rows) }));
-        if (f.sheets.length === 0) f.error = 'ODS fajl ne sadrži nijedan list.';
+        const sheets = f.kind === 'xlsx' ? parseXlsx(bytes) : parseOds(bytes);
+        f.sheets = sheets.map((s) => ({ name: s.name, rows: padRows(s.rows) }));
+        if (f.sheets.length === 0) f.error = `${f.kind === 'xlsx' ? 'Excel' : 'ODS'} fajl ne sadrži nijedan list.`;
       } catch (err) {
         f.error = err instanceof Error ? err.message : String(err);
       }
@@ -371,7 +382,7 @@ function renderAll() {
   if (state.tab === 'parts') renderParts(f);
   else if (state.tab === 'src') renderPreview(f, table, stats);
   else renderDiff(f);
-  $('btn-all').hidden = !(f.kind === 'ods' && (f.sheets?.length ?? 0) > 1);
+  $('btn-all').hidden = !(isSheets(f) && (f.sheets?.length ?? 0) > 1);
   updateDownloadLabel();
 }
 
@@ -406,7 +417,7 @@ function fillSelect(sel: HTMLSelectElement, opts: [string, string][], value: str
 
 function renderDetect(f: FileEntry) {
   document.querySelectorAll<HTMLElement>('.csv-only').forEach((e) => (e.hidden = f.kind !== 'csv'));
-  document.querySelectorAll<HTMLElement>('.ods-only').forEach((e) => (e.hidden = f.kind !== 'ods'));
+  document.querySelectorAll<HTMLElement>('.sheet-only').forEach((e) => (e.hidden = !isSheets(f)));
   const info = $('detect-info');
   if (f.loading) {
     info.textContent = 'Učitavam i obrađujem…';
@@ -438,7 +449,7 @@ function renderDetect(f: FileEntry) {
     );
   } else {
     const n = f.sheets?.length ?? 0;
-    info.textContent = `ODS fajl: ${n} ${n === 1 ? 'list' : 'listova'}.`;
+    info.textContent = `${f.kind === 'xlsx' ? 'Excel' : 'ODS'} fajl: ${n} ${n === 1 ? 'list' : 'listova'}.`;
     fillSelect(
       $('sel-sheet') as HTMLSelectElement,
       (f.sheets ?? []).map((s, i) => [String(i), `${i + 1}. ${s.name}`] as [string, string]),
@@ -1004,7 +1015,7 @@ function defaultFileBase(f: FileEntry): string {
   const conv = getConv(f);
   const first = conv?.materials.map((m) => f.wtMat[m]).find((w): w is WtMaterial => !!w);
   if (first) return suggestFilename(first, currentBand());
-  return baseName(f.name) + (f.kind === 'ods' && (f.sheets?.length ?? 0) > 1 ? '_' + safeName(f.sheets![f.sheetIdx].name) : '');
+  return baseName(f.name) + (isSheets(f) && (f.sheets?.length ?? 0) > 1 ? '_' + safeName(f.sheets![f.sheetIdx].name) : '');
 }
 
 function onWtMatChange(inp: HTMLInputElement) {
@@ -1083,7 +1094,7 @@ async function doDownload() {
   const { ext } = exportSettings();
   const r = buildBytes(rows);
   let name = baseName(f.name);
-  if (f.kind === 'ods' && (f.sheets?.length ?? 0) > 1) name += '_' + safeName(f.sheets![f.sheetIdx].name);
+  if (isSheets(f) && (f.sheets?.length ?? 0) > 1) name += '_' + safeName(f.sheets![f.sheetIdx].name);
   download(name + ext, r.bytes, 'text/tab-separated-values');
   setStatus(
     `Preuzeto: ${name + ext} (${fmtSize(r.bytes.length)}).` +

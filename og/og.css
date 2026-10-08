@@ -9,4 +9,7 @@ svg.draw path, svg.rough.draw path { animation: none !important; stroke-dasharra
 .og-sub { font-family: var(--f-hand); font-size: 50px; margin: 6px 0 0; }
 .og-sub b { color: var(--red); }
 .og .flow { max-width: 860px; margin: 8px 0 0 -10px; }
-.og .privacy { font-size: 28px; max-width: none; display: inline-flex; margin: 6px 0 0; padding: 10px 20px; }
+.og .privacy {
+  font-size: 28px; display: inline-flex; gap: 10px; align-items: center; margin: 6px 0 0; padding: 10px 20px;
+  background: color-mix(in srgb, var(--paper-hi) 80%, transparent);
+}
