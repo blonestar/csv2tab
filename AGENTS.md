@@ -56,8 +56,11 @@ pa agent sam čeka provere:
 
 1. `gh pr checks <broj> --watch --fail-fast` — čeka da se završe sve provere (Vercel build i preview).
 2. Ako su sve prošle: `gh pr merge <broj> --merge --delete-branch`, pa lokalno `git switch main && git pull`.
-3. Ako neka provera padne ili PR ima konflikt: **ne mergeuje**. Javi korisniku šta je palo (sa linkom) i predloži
-   ispravku.
+3. Ako PR ima konflikt koji se rešava mehanički (najčešće verzija u `package.json`/`package-lock.json` jer je
+   drugi PR u međuvremenu podigao verziju): agent ga **sam rešava**. Spoji `origin/main` u granu, uzme verziju sa
+   `main`-a, ponovo je podigne (`npm version …`), proveri build i testove, pushuje i vrati se na korak 1.
+4. Ako neka provera padne ili je konflikt u kodu i traži odluku o ponašanju: **ne mergeuje**. Javi korisniku
+   šta je palo (sa linkom) i predloži ispravku.
 
 - Merge commit (`--merge`), ne squash/rebase: istorija grana ostaje vidljiva, kao u dosadašnjim PR-ovima.
 - Ne mergeuje se ako korisnik kaže da PR treba da sačeka (pregled, testiranje) ili ako je PR draft.
