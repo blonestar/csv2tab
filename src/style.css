@@ -268,8 +268,10 @@ details.card > summary { margin: 0; }
 .sum { margin: 6px 0 10px; }
 
 /* tabela kantova */
+.grid > #convert:has(#edge-details[open]) { grid-column: 1 / -1; } /* otvorena tabela zauzima ceo red, korak 4 ide ispod */
+#edge-table { overflow-x: auto; }
 .edge-table { border-collapse: collapse; margin: 8px 0; }
-.edge-table td { padding: 2px 6px; font-family: var(--f-mono); }
+.edge-table td { padding: 2px 6px; font-family: var(--f-mono); white-space: nowrap; }
 .edge-table input { width: 5.5em; text-align: right; font-family: var(--f-mono); }
 .edge-table .x { background: none; border: 0; cursor: pointer; color: var(--red); font-size: 20px; }
 
@@ -289,6 +291,9 @@ footer .app-version { margin-top: 4px; font-size: 13px; opacity: .8; }
   .top, main, footer { padding: 0 10px; }
   .theme-picker { position: static; justify-content: flex-end; margin-bottom: 8px; }
   .card { padding: 12px; }
+  .edge-table td { padding: 2px 3px; }
+  .edge-table input { width: 3.5em; }
+  #edge-table .edge-table select { min-width: 0; width: 9em; }
   h1.title { font-size: 54px; }
   body { font-size: 17px; }
 }
