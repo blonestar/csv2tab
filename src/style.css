@@ -64,6 +64,67 @@
   --ok: rgba(120, 220, 150, 0.22);
 }
 
+/* Pregledna, svetla: neutralna podloga, bele kartice, plavi akcenat */
+:root[data-theme='clean'] {
+  --paper: #f3f5f8;
+  --paper-hi: #ffffff;
+  --paper-texture: none;
+  --grid-minor: transparent;
+  --grid-major: transparent;
+  --line: #2b2a30;
+  --fg: #1b2230;
+  --muted: #5b6575;
+  --marker: #ffe35c;
+  --marker-a: rgba(250, 204, 21, 0.32);
+  --hatch: #f7c93a;
+  --accent: #1f62d0;
+  --accent-soft: rgba(31, 98, 208, 0.1);
+  --on-primary: #ffffff;
+  --border: #d9dee6;
+  --hover: #eef1f5;
+  --shadow: 0 1px 2px rgba(16, 24, 40, 0.05), 0 1px 3px rgba(16, 24, 40, 0.06);
+  --red: #c42b22;
+  --blue: #36649f;
+  --green: #36814f;
+  --faint: #e3e7ed;
+  --th: #f0f2f6;
+  --tab: rgba(240, 100, 100, 0.22);
+  --dec: rgba(80, 150, 235, 0.22);
+  --sus: rgba(180, 110, 225, 0.22);
+  --rag: rgba(255, 130, 110, 0.16);
+  --ok: rgba(70, 180, 110, 0.16);
+}
+/* Pregledna, tamna */
+:root[data-theme='clean'][data-scheme='dark'] {
+  --paper: #11151b;
+  --paper-hi: #1a2029;
+  --paper-texture: none;
+  --grid-minor: transparent;
+  --grid-major: transparent;
+  --line: #e4e9f1;
+  --fg: #e4e9f1;
+  --muted: #98a3b3;
+  --marker: #f6d54a;
+  --marker-a: rgba(246, 213, 74, 0.26);
+  --hatch: #4f86cc;
+  --accent: #5b9cf5;
+  --accent-soft: rgba(91, 156, 245, 0.16);
+  --on-primary: #0d1420;
+  --border: #2d3542;
+  --hover: #232a35;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --red: #ff7a6b;
+  --blue: #8ec5ff;
+  --green: #7fe0a0;
+  --faint: #2a313c;
+  --th: #212833;
+  --tab: rgba(255, 110, 110, 0.24);
+  --dec: rgba(110, 170, 255, 0.24);
+  --sus: rgba(205, 140, 240, 0.24);
+  --rag: rgba(255, 130, 110, 0.16);
+  --ok: rgba(110, 215, 145, 0.14);
+}
+
 * { box-sizing: border-box; }
 html { background: var(--paper); }
 body {
@@ -303,3 +364,116 @@ mark.mk { background: var(--marker-a); color: inherit; padding: 0 6px; border-ra
 .edge-table select { font-size: 15px; min-width: 15em; }
 .diff-table th { font-size: 16px; }
 .diff-table td { white-space: nowrap; }
+
+/*
+ * Pregledna: isti raspored, ali bez skice. Okvire ne crta rough.js (frames: false u src/theme.ts),
+ * pa su ivice, senke i stanja ovde. Logo (h1.title), skica toka i ikone ostaju kao u Skici.
+ */
+:root[data-theme='clean'] {
+  --f-body: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --radius: 10px;
+}
+
+:root[data-theme='clean'] body { font-size: 15px; line-height: 1.5; }
+:root[data-theme='clean'] h2, :root[data-theme='clean'] summary, :root[data-theme='clean'] .tabs .tab, :root[data-theme='clean'] .grid-table thead th, :root[data-theme='clean'] .warnmark { font-family: var(--f-body); }
+:root[data-theme='clean'] h2 { font-size: 17px; font-weight: 650; gap: 10px; margin-bottom: 14px; }
+:root[data-theme='clean'] .step {
+  width: 24px; height: 24px; font-size: 13px; font-weight: 700; transform: none;
+  border: 0; border-radius: 50%; background: var(--accent); color: var(--on-primary);
+}
+
+:root[data-theme='clean'] .card, :root[data-theme='clean'] .privacy {
+  background: var(--paper-hi); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow);
+}
+:root[data-theme='clean'] .card { padding: 20px 22px; }
+:root[data-theme='clean'] .privacy { font-size: 14px; padding: 10px 14px; margin-bottom: 22px; }
+
+:root[data-theme='clean'] .dropzone { border: 2px dashed var(--border); border-radius: var(--radius); background: var(--paper); padding: 28px; }
+:root[data-theme='clean'] .dropzone:hover, :root[data-theme='clean'] .dropzone:focus-visible, :root[data-theme='clean'] .dropzone.over { background: var(--accent-soft); border-color: var(--accent); }
+:root[data-theme='clean'] .hint { font-size: 13px; }
+
+:root[data-theme='clean'] .btn {
+  font-size: 14px; font-weight: 500; padding: 7px 14px; line-height: 1.3;
+  background: var(--paper-hi); border: 1px solid var(--border); border-radius: 7px;
+  transition: background 0.15s, border-color 0.15s;
+}
+:root[data-theme='clean'] .btn:hover:not(:disabled) { animation: none; background: var(--hover); }
+:root[data-theme='clean'] .btn.primary { background: var(--accent); border-color: var(--accent); font-weight: 600; }
+:root[data-theme='clean'] .btn.primary:hover:not(:disabled) { background: color-mix(in srgb, var(--accent) 88%, var(--fg)); }
+:root[data-theme='clean'] .btn.small { font-size: 13px; padding: 4px 10px; }
+:root[data-theme='clean'] .btn:focus-visible, :root[data-theme='clean'] select:focus-visible, :root[data-theme='clean'] input:focus-visible, :root[data-theme='clean'] summary:focus-visible, :root[data-theme='clean'] .tabs .tab:focus-visible, :root[data-theme='clean'] .file-list button:focus-visible {
+  outline: 2px solid var(--accent); outline-offset: 2px;
+}
+
+/* Sistem / Svetla / Tamna kao jedna segmentirana kontrola */
+:root[data-theme='clean'] .theme-picker select { font-size: 13px; padding: 4px 8px; }
+:root[data-theme='clean'] .theme-mode { gap: 0; border: 1px solid var(--border); border-radius: 8px; padding: 2px; background: var(--paper-hi); }
+:root[data-theme='clean'] .theme-mode .btn { font-size: 13px; padding: 3px 10px; border: 0; border-radius: 6px; background: transparent; color: var(--muted); }
+:root[data-theme='clean'] .theme-mode .btn.active { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+
+:root[data-theme='clean'] .file-list { gap: 8px; }
+:root[data-theme='clean'] .file-list li { padding: 0; border: 1px solid var(--border); border-radius: 8px; background: var(--paper-hi); }
+:root[data-theme='clean'] .file-list li.active { border-color: var(--accent); background: var(--accent-soft); }
+:root[data-theme='clean'] .file-list button { font-size: 14px; padding: 6px 10px; border-radius: 8px; }
+:root[data-theme='clean'] .file-rm { color: var(--muted); }
+:root[data-theme='clean'] .badge { font-size: 10.5px; border-radius: 4px; padding: 1px 5px; }
+
+:root[data-theme='clean'] .fields label, :root[data-theme='clean'] .map-grid label { font-size: 13px; font-weight: 500; gap: 4px; }
+:root[data-theme='clean'] select, :root[data-theme='clean'] input[type='text'], :root[data-theme='clean'] input[type='number'] {
+  font-size: 14px; padding: 6px 9px; background: var(--paper-hi);
+  border: 1px solid var(--border); border-radius: 7px;
+}
+:root[data-theme='clean'] select:hover, :root[data-theme='clean'] input[type='text']:hover, :root[data-theme='clean'] input[type='number']:hover { border-color: color-mix(in srgb, var(--border) 50%, var(--muted)); }
+:root[data-theme='clean'] input[type='checkbox'] { accent-color: var(--accent); width: 16px; height: 16px; }
+:root[data-theme='clean'] .checks { gap: 6px; }
+:root[data-theme='clean'] .checks label.indent { font-size: 13px; }
+:root[data-theme='clean'] .warnings li.sub { font-size: 13px; }
+:root[data-theme='clean'] .circled { font-weight: 700; color: var(--red); padding: 0 2px; }
+
+:root[data-theme='clean'] details > summary { font-size: 16px; font-weight: 650; }
+:root[data-theme='clean'] details > summary::before {
+  content: '›'; display: inline-block; width: 1em; color: var(--muted); font-weight: 400; transition: transform 0.15s;
+}
+:root[data-theme='clean'] details[open] > summary::before { transform: rotate(90deg); }
+:root[data-theme='clean'] details[open] > summary { margin-bottom: 12px; }
+:root[data-theme='clean'] #clean h2 { font-size: 15px !important; }
+
+/* tabovi: podvučeni */
+:root[data-theme='clean'] .tabs { gap: 2px; margin: -6px 0 16px; border-bottom: 1px solid var(--border); }
+:root[data-theme='clean'] .tabs .tab {
+  font-size: 14px; font-weight: 600; color: var(--muted); padding: 10px 14px;
+  border-bottom: 2px solid transparent; margin-bottom: -1px;
+}
+:root[data-theme='clean'] .tabs .tab:hover { color: var(--fg); }
+:root[data-theme='clean'] .tabs .tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+:root[data-theme='clean'] .legend { gap: 6px; font-size: 12px; }
+:root[data-theme='clean'] .chip { padding: 2px 10px; border: 1px solid var(--border); border-radius: 999px; }
+:root[data-theme='clean'] .chip.chg { border-radius: 999px; }
+
+:root[data-theme='clean'] .table-wrap { background: var(--paper-hi); border: 1px solid var(--border); border-radius: 8px; }
+:root[data-theme='clean'] .grid-table { font-size: 13px; }
+:root[data-theme='clean'] .grid-table th, :root[data-theme='clean'] .grid-table td { padding: 4px 9px; }
+:root[data-theme='clean'] .grid-table thead th { font-size: 12.5px; font-weight: 600; border-bottom: 1px solid var(--border); }
+:root[data-theme='clean'] .grid-table th small { font-size: 10px; }
+:root[data-theme='clean'] .grid-table tbody tr:hover td:not(.rn) { box-shadow: inset 0 0 0 999px var(--accent-soft); }
+:root[data-theme='clean'] .grid-table td.chg, :root[data-theme='clean'] .grid-table td.edited { background: var(--marker-a); }
+
+:root[data-theme='clean'] .parts-table input { font-size: 13px; padding: 3px 5px; background: transparent; border: 1px solid transparent; border-radius: 5px; }
+:root[data-theme='clean'] .parts-table input:hover, :root[data-theme='clean'] .parts-table td.edit.edited input { border-color: var(--border); }
+:root[data-theme='clean'] .parts-table input:focus { background: var(--paper-hi); outline: 2px solid var(--accent); outline-offset: -1px; border-color: transparent; }
+:root[data-theme='clean'] .parts-table select { font-size: 13px; border-color: var(--border); border-radius: 6px; padding: 2px 6px; }
+:root[data-theme='clean'] .edesc { font-size: 12px; }
+:root[data-theme='clean'] .warnmark { width: 20px; height: 20px; font-size: 12px; border-width: 1.5px; border-radius: 50%; transform: none; }
+:root[data-theme='clean'] .swap:hover { color: var(--accent); }
+:root[data-theme='clean'] .diff-table td.d { font-size: 13px; }
+:root[data-theme='clean'] .diff-table th { font-size: 12.5px; }
+:root[data-theme='clean'] .edge-table select { font-size: 13px; }
+
+:root[data-theme='clean'] mark.mk { border-radius: 4px; }
+:root[data-theme='clean'] code { border-radius: 4px; }
+:root[data-theme='clean'] footer { font-size: 13px; }
+
+@media (max-width: 640px) {
+  :root[data-theme='clean'] body { font-size: 15px; }
+  :root[data-theme='clean'] .card { padding: 14px; }
+}
