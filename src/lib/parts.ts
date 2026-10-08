@@ -1,4 +1,4 @@
-// CSV / ODS redovi -> zapisi za WT Input (.tab).
+// CSV / ODS / XLSX redovi -> zapisi za WT Input (.tab).
 import { fitName, type WtPart } from './wtTab';
 
 // ---------- mapiranje kolona ----------
