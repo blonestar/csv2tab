@@ -1,7 +1,8 @@
 {
   "name": "csv2tab",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "private": true,
+  "author": "Bojan",
   "type": "module",
   "description": "Pretvara CSV i ODS u tab-delimited (.tab/.tsv) fajl, sve u browseru.",
   "scripts": {

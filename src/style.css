@@ -266,6 +266,7 @@ details.card > summary { margin: 0; }
 .diff-table td.d { white-space: normal; min-width: 14em; font-family: var(--f-body); font-size: 15px; }
 
 footer { color: var(--muted); font-size: 15px; padding-bottom: 28px; text-align: center; }
+footer .app-version { margin-top: 4px; font-size: 13px; opacity: .8; }
 [hidden] { display: none !important; }
 @media (max-width: 640px) {
   .top, main, footer { padding: 0 10px; }
