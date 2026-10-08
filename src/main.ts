@@ -1,4 +1,6 @@
+import './fonts';
 import './style.css';
+import { initSketch, sketchAll } from './sketch';
 import { zipSync } from 'fflate';
 import { analyze, hasTabOrNewline, isDecimalComma, isSuspicious, type Stats } from './lib/analyze';
 import {
@@ -235,7 +237,7 @@ function renderFileList() {
   ul.hidden = state.files.length === 0;
   ul.innerHTML = state.files
     .map(
-      (f) => `<li class="${f.id === state.activeId ? 'active' : ''}">
+      (f) => `<li data-rough="tag" class="${f.id === state.activeId ? 'active' : ''}">
         <button type="button" class="file-pick" data-id="${f.id}">
           <span class="badge">${f.kind.toUpperCase()}</span>
           <span class="fname">${esc(f.name)}</span>
@@ -245,6 +247,9 @@ function renderFileList() {
       </li>`,
     )
     .join('');
+  // aktivna oznaka menja ispunu -> iscrtaj ponovo
+  ul.querySelectorAll('li').forEach((li) => li.removeAttribute('data-seed'));
+  sketchAll(ul);
 }
 
 function fillSelect(sel: HTMLSelectElement, opts: [string, string][], value: string) {
@@ -302,21 +307,24 @@ function renderWarnings(f: FileEntry, s: Stats | undefined) {
     if (s.raggedRows > 0) {
       const sample = s.raggedSample.map((r) => r + 1).join(', ');
       items.push(
-        `<li>${nf(s.raggedRows)} ${s.raggedRows === 1 ? 'red ima' : 'redova ima'} drugačiji broj kolona od zaglavlja (red ${esc(sample)}${s.raggedRows > s.raggedSample.length ? ', …' : ''}). Možda je pogrešan separator.</li>`,
+        `<li><b class="circled" data-rough="circle">${nf(s.raggedRows)}</b> ${s.raggedRows === 1 ? 'red ima' : 'redova ima'} drugačiji broj kolona od zaglavlja (red ${esc(sample)}${s.raggedRows > s.raggedSample.length ? ', …' : ''}). Možda je pogrešan separator.</li>`,
       );
     }
     if (s.tabNewlineCells > 0)
-      items.push(`<li>${nf(s.tabNewlineCells)} ćelija sadrži tab ili novi red (uključite zamenu razmakom).</li>`);
+      items.push(`<li><b class="circled" data-rough="circle">${nf(s.tabNewlineCells)}</b> ćelija sadrži tab ili novi red (uključite zamenu razmakom).</li>`);
     if (s.decimalCommaCells > 0)
-      items.push(`<li>${nf(s.decimalCommaCells)} ćelija izgleda kao broj sa decimalnim zarezom.</li>`);
+      items.push(`<li><b class="circled" data-rough="circle">${nf(s.decimalCommaCells)}</b> ćelija izgleda kao broj sa decimalnim zarezom.</li>`);
     if (s.mojibakeCells > 0)
-      items.push(`<li>${nf(s.mojibakeCells)} ćelija izgleda kao mojibake (pogrešno kodiranje). Probajte drugo kodiranje ili uključite „Popravi mojibake".</li>`);
+      items.push(`<li><b class="circled" data-rough="circle">${nf(s.mojibakeCells)}</b> ćelija izgleda kao mojibake (pogrešno kodiranje). Probajte drugo kodiranje ili uključite „Popravi mojibake".</li>`);
     const other = s.suspiciousCells - s.mojibakeCells;
     if (other > 0)
-      items.push(`<li>${nf(other)} ćelija sadrži sumnjive znakove (BOM, nerazdvojivi razmak ili zamenski znak).</li>`);
+      items.push(`<li><b class="circled" data-rough="circle">${nf(other)}</b> ćelija sadrži sumnjive znakove (BOM, nerazdvojivi razmak ili zamenski znak).</li>`);
   }
   $('warnings-card').hidden = items.length === 0;
-  $('warnings').innerHTML = items.join('');
+  $('warnings').innerHTML = items
+    .map((li) => li.replace(/^<li( class="err")?>/, (_m, c) => `<li${c ?? ''}><svg class="icon" data-icon="warn" width="28" height="28" viewBox="0 0 28 28"></svg><span>`).replace(/<\/li>$/, '</span></li>'))
+    .join('');
+  sketchAll($('warnings'));
 }
 
 function renderPreview(f: FileEntry, rows: string[][] | undefined, s: Stats | undefined) {
@@ -607,3 +615,4 @@ function init() {
 }
 
 init();
+initSketch();
