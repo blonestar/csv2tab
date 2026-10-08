@@ -268,6 +268,16 @@ function removeFile(id: number) {
   renderAll();
 }
 
+// premesti fajl na poziciju `to` (indeks u listi posle uklanjanja)
+function moveFile(id: number, to: number) {
+  const from = state.files.findIndex((x) => x.id === id);
+  if (from < 0) return;
+  const [f] = state.files.splice(from, 1);
+  to = Math.max(0, Math.min(to, state.files.length));
+  state.files.splice(to, 0, f);
+  if (to !== from) renderFileList();
+}
+
 function removeAll() {
   if (!confirmLoss(state.files)) return;
   state.files = [];
@@ -369,9 +379,12 @@ function renderFileList() {
   const ul = $('file-list');
   ul.hidden = state.files.length === 0;
   $('remove-all').hidden = state.files.length === 0;
+  const many = state.files.length > 1;
   ul.innerHTML = state.files
     .map(
-      (f) => `<li data-rough="tag" class="${f.id === state.activeId ? 'active' : ''}">
+      (f) => `<li data-rough="tag" data-li="${f.id}" class="${f.id === state.activeId ? 'active' : ''}"${
+        many ? ' draggable="true" title="Prevucite za promenu redosleda (ili Alt + ← / →)"' : ''
+      }>
         <button type="button" class="file-pick" data-id="${f.id}">
           <span class="badge">${f.kind.toUpperCase()}</span>
           <span class="fname">${esc(f.name)}</span>
@@ -1180,6 +1193,59 @@ function init() {
       state.activeId = Number(pick.dataset.id);
       renderAll();
     }
+  });
+
+  // promena redosleda: prevlačenje kartica ili Alt + strelice na izabranom fajlu
+  const fl = $('file-list');
+  let dragId = -1;
+  const clearMarks = () =>
+    fl.querySelectorAll('.drop-before, .drop-after').forEach((x) => x.classList.remove('drop-before', 'drop-after'));
+  const dropTarget = (e: DragEvent) => {
+    const li = (e.target as HTMLElement).closest<HTMLElement>('li[data-li]');
+    if (!li || Number(li.dataset.li) === dragId) return undefined;
+    const r = li.getBoundingClientRect();
+    return { li, after: e.clientX > r.left + r.width / 2 };
+  };
+  fl.addEventListener('dragstart', (e) => {
+    const li = (e.target as HTMLElement).closest<HTMLElement>('li[data-li]');
+    if (!li || !e.dataTransfer) return;
+    dragId = Number(li.dataset.li);
+    e.dataTransfer.effectAllowed = 'move';
+    e.dataTransfer.setData('text/plain', li.dataset.li!);
+    li.classList.add('dragging');
+  });
+  fl.addEventListener('dragover', (e) => {
+    if (dragId < 0) return; // spoljni fajlovi idu u dropzone, ne ovde
+    e.preventDefault();
+    clearMarks();
+    const t = dropTarget(e);
+    if (t) t.li.classList.add(t.after ? 'drop-after' : 'drop-before');
+  });
+  fl.addEventListener('drop', (e) => {
+    if (dragId < 0) return;
+    e.preventDefault();
+    const t = dropTarget(e);
+    if (t) {
+      const from = state.files.findIndex((x) => x.id === dragId);
+      let to = state.files.findIndex((x) => x.id === Number(t.li.dataset.li)) + (t.after ? 1 : 0);
+      if (from < to) to--;
+      moveFile(dragId, to);
+    }
+  });
+  fl.addEventListener('dragend', () => {
+    dragId = -1;
+    clearMarks();
+    fl.querySelectorAll('.dragging').forEach((x) => x.classList.remove('dragging'));
+  });
+  fl.addEventListener('keydown', (e) => {
+    if (!e.altKey) return;
+    const d = { ArrowLeft: -1, ArrowUp: -1, ArrowRight: 1, ArrowDown: 1 }[e.key];
+    const pick = (e.target as HTMLElement).closest<HTMLElement>('.file-pick');
+    if (!d || !pick) return;
+    e.preventDefault();
+    const id = Number(pick.dataset.id);
+    moveFile(id, state.files.findIndex((x) => x.id === id) + d);
+    fl.querySelector<HTMLElement>(`.file-pick[data-id="${id}"]`)?.focus();
   });
 
   $('sel-encoding').addEventListener('change', (e) => {
