@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="sr-Latn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="csv2tab pretvara CSV i ODS u tab-delimited (.tab / .tsv) fajl. Sve se obrađuje u vašem browseru." />
+    <title>csv2tab — CSV / ODS u TAB</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232563eb'/%3E%3Cpath d='M8 11h16M8 16h16M8 21h16M16 8v16' stroke='white' stroke-width='2'/%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <header class="top">
+      <h1>csv2tab</h1>
+      <p class="privacy">
+        Pretvara <b>CSV</b> i <b>ODS</b> u <b>tab-delimited</b> fajl. Obrada je potpuno u vašem browseru
+        — fajl nikad ne napušta vaš računar.
+      </p>
+    </header>
+
+    <main>
+      <section class="card" id="upload">
+        <div id="dropzone" class="dropzone" tabindex="0" role="button" aria-label="Izaberite ili prevucite fajlove">
+          <p><strong>Prevucite fajlove ovde</strong> ili</p>
+          <button type="button" id="pick" class="btn primary">Izaberite fajlove</button>
+          <p class="hint">Podržano: .csv, .txt, .ods</p>
+          <input id="file-input" type="file" accept=".csv,.txt,.tsv,.tab,.ods" multiple hidden />
+        </div>
+        <ul id="file-list" class="file-list" hidden></ul>
+      </section>
+
+      <div id="workspace" hidden>
+        <div class="grid">
+          <section class="card" id="detect">
+            <h2>Detekcija</h2>
+            <p id="detect-info" class="muted"></p>
+            <div class="fields">
+              <label class="csv-only">Kodiranje
+                <select id="sel-encoding"></select>
+              </label>
+              <label class="csv-only">Separator
+                <select id="sel-delimiter"></select>
+              </label>
+              <label class="ods-only">List
+                <select id="sel-sheet"></select>
+              </label>
+            </div>
+          </section>
+
+          <section class="card" id="clean">
+            <h2>Čišćenje</h2>
+            <div class="checks">
+              <label><input type="checkbox" id="o-ws" /> Tab / novi red unutar ćelije → razmak</label>
+              <label><input type="checkbox" id="o-dec" /> Decimalni zarez → tačka (<code>1.234,56</code> → <code>1234.56</code>)</label>
+              <label><input type="checkbox" id="o-thou" /> Ukloni separator hiljada u celim brojevima (<code>1.234.567</code> → <code>1234567</code>)</label>
+              <label><input type="checkbox" id="o-units" /> Ukloni jedinice mere iz numeričkih ćelija</label>
+              <label class="indent">Jedinice (odvojene zarezom)
+                <input type="text" id="o-units-list" spellcheck="false" />
+              </label>
+              <label><input type="checkbox" id="o-trim" /> Skini razmake na početku i kraju</label>
+              <label><input type="checkbox" id="o-nbsp" /> Nerazdvojivi razmak (U+00A0) → razmak</label>
+              <label><input type="checkbox" id="o-bom" /> Skini BOM znakove (U+FEFF)</label>
+              <label><input type="checkbox" id="o-moji" /> Popravi mojibake (npr. <code>Ä‡</code> → <code>ć</code>)</label>
+              <label><input type="checkbox" id="o-erows" /> Obriši potpuno prazne redove</label>
+              <label><input type="checkbox" id="o-ecols" /> Obriši potpuno prazne kolone</label>
+              <label><input type="checkbox" id="o-sel" /> Čisti samo izabrane kolone <span class="muted">(označite ih u zaglavlju tabele)</span></label>
+            </div>
+          </section>
+
+          <section class="card" id="export">
+            <h2>Izvoz</h2>
+            <div class="fields">
+              <label>Ekstenzija
+                <select id="x-ext">
+                  <option value=".tab">.tab</option>
+                  <option value=".tsv">.tsv</option>
+                  <option value=".txt">.txt</option>
+                </select>
+              </label>
+              <label>Kodiranje
+                <select id="x-enc">
+                  <option value="utf-8">UTF-8</option>
+                  <option value="utf-8-bom">UTF-8 sa BOM-om (Excel)</option>
+                  <option value="windows-1250">windows-1250</option>
+                </select>
+              </label>
+              <label>Kraj reda
+                <select id="x-eol">
+                  <option value="lf">LF (Linux / macOS)</option>
+                  <option value="crlf">CRLF (Windows)</option>
+                </select>
+              </label>
+            </div>
+            <div class="actions">
+              <button type="button" id="btn-download" class="btn primary">Preuzmi .tab</button>
+              <button type="button" id="btn-all" class="btn" hidden>Preuzmi sve listove (ZIP)</button>
+              <button type="button" id="btn-copy" class="btn">Kopiraj u clipboard</button>
+            </div>
+            <p id="export-status" class="muted" role="status"></p>
+          </section>
+        </div>
+
+        <section class="card" id="warnings-card" hidden>
+          <h2>Upozorenja</h2>
+          <ul id="warnings" class="warnings"></ul>
+        </section>
+
+        <section class="card">
+          <h2>Pregled</h2>
+          <p id="preview-info" class="muted"></p>
+          <div class="legend">
+            <span class="chip chg">promenjeno čišćenjem</span>
+            <span class="chip w-tab">tab / novi red</span>
+            <span class="chip w-dec">decimalni zarez</span>
+            <span class="chip w-sus">sumnjiv znak</span>
+            <span class="chip rag">drugačiji broj kolona</span>
+          </div>
+          <div id="table-wrap" class="table-wrap"></div>
+        </section>
+      </div>
+    </main>
+
+    <footer>csv2tab — obrada u browseru, bez slanja podataka na server.</footer>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
