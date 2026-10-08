@@ -1,4 +1,5 @@
 import rough from 'roughjs';
+import { THEME_EVENT } from './theme';
 
 /**
  * "Sketch" sloj: rough.js crta ručne okvire iza elemenata sa data-rough atributom
@@ -231,6 +232,9 @@ export function initSketch() {
   const flow = document.getElementById('flow');
   if (flow) drawFlow(flow as unknown as SVGSVGElement);
   sketchAll();
-  matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => setTimeout(redrawEverything, 30));
+  document.addEventListener(THEME_EVENT, (e) => {
+    if ((e as CustomEvent<{ changed: boolean }>).detail.changed) redrawEverything();
+    else document.querySelectorAll<HTMLElement>('#theme-mode [data-rough]').forEach(draw);
+  });
   // fontovi menjaju veličine -> ResizeObserver ih hvata sam
 }

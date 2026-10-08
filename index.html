@@ -1,10 +1,20 @@
 <!doctype html>
-<html lang="sr-Latn">
+<html lang="sr-Latn" data-theme="sketch" data-scheme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="light dark" />
     <meta name="description" content="csv2tab pretvara CSV i ODS krojne liste u binarni WT Input .tab (uz sporedni TSV izvoz). Sve se obrađuje u vašem browseru." />
+    <script>
+      /* tema pre prvog iscrtavanja (bez treptanja); ista logika kao src/theme.ts */
+      (function () {
+        var d = document.documentElement, p = {};
+        try { p = JSON.parse(localStorage.getItem('csv2tab.theme')) || {}; } catch (e) {}
+        if (typeof p.theme === 'string') d.dataset.theme = p.theme; /* theme.ts proverava da li postoji */
+        var m = p.mode === 'light' || p.mode === 'dark' ? p.mode : matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        d.dataset.scheme = m;
+      })();
+    </script>
     <title>csv2tab — CSV / ODS u WT Input .tab</title>
     <!-- preview pri deljenju (og.png se generiše iz og/index.html: npm run og); URL-ovi moraju biti apsolutni -->
     <meta property="og:type" content="website" />
@@ -32,6 +42,7 @@
       </filter>
     </svg>
     <header class="top">
+      <div id="theme-picker" class="theme-picker"></div>
       <h1 class="title">csv2tab</h1>
       <svg id="flow" class="flow" viewBox="0 0 640 160" role="img" aria-label="Skica: CSV i ODS fajl se pretvaraju u WT Input TAB fajl"></svg>
       <p class="privacy" data-rough="box">

@@ -1,5 +1,21 @@
 # Uputstva za agente
 
+## Grane
+
+- Svaka nova grana se pravi **iz `main`-a** (`git switch -c <grana> main`), nikad iz trenutne feature grane,
+  čak i ako prethodna grana još nije spojena.
+
+## Teme
+
+- Na `<html>` su `data-theme="<id>"` i `data-scheme="light|dark"`, a postavlja ih `src/theme.ts`. Korisnik bira
+  varijantu: Sistem / Svetla / Tamna. Izbor se čuva u localStorage pod ključem `csv2tab.theme`.
+- Svaka tema ima **obe** varijante. Boje su CSS promenljive u `src/style.css`: blok `:root[data-theme='<id>']` za svetlu
+  i blok `:root[data-theme='<id>'][data-scheme='dark']` za tamnu. U ostatku CSS-a i u `src/sketch.ts` koriste se samo
+  promenljive, bez fiksnih boja i bez `prefers-color-scheme`.
+- Nova tema: dodaj je u `THEMES` u `src/theme.ts` i napiši njena dva bloka promenljivih. Izbor teme u headeru se
+  prikazuje sam čim postoji više od jedne teme.
+- Postojeće teme: `sketch` („Skica“). Svetla varijanta je reciklirani papir, a tamna je blueprint.
+
 ## Verzija (SemVer)
 
 Verzija aplikacije je `version` u `package.json`. Pri buildu se čita i prikazuje u footeru (`v0.1.0 - by Bojan`).

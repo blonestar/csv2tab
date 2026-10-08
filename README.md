@@ -2,8 +2,9 @@
 
 Web aplikacija koja pretvara **CSV** i **ODS** krojne liste (export iz programa za projektovanje) u binarni
 **WT Input `.tab`** fajl (krojne liste za pločaste materijale). Sva obrada se izvršava u browseru — fajl nikad ne napušta
-korisnikov računar. UI je na srpskom (latinica), u „sketch" stilu (rough.js, rukopisni fontovi, milimetarski papir,
-tamna tema = blueprint).
+korisnikov računar. UI je na srpskom (latinica), u „sketch" stilu (rough.js, rukopisni fontovi, milimetarski papir).
+Tema ima svetlu varijantu (reciklirani papir) i tamnu (blueprint). U headeru se bira Sistem / Svetla / Tamna, a izbor se
+pamti u browseru.
 
 ## Šta radi
 
@@ -53,6 +54,7 @@ Potreban je Node 20+.
 
 ## Struktura
 
+- `src/theme.ts` — teme i izbor svetle/tamne varijante (boje su u `src/style.css`)
 - `src/lib/wtTab.ts` — čitanje/pisanje binarnog `.tab`
 - `src/lib/parts.ts` — redovi → zapisi (mapiranje kolona, parsiranje, tabela kantova, spajanje)
 - `src/lib/compare.ts` — poređenje dva skupa zapisa
