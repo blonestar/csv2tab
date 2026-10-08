@@ -230,6 +230,10 @@ code { font-family: var(--f-mono); font-size: 0.8em; background: var(--th); padd
 .file-pick { display: flex; gap: 8px; align-items: center; }
 .fname { max-width: 260px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .file-rm:hover { color: var(--red); }
+.file-list li[draggable='true'] { cursor: grab; }
+.file-list li.dragging { opacity: 0.4; }
+.file-list li.drop-before { box-shadow: -4px 0 0 -1px var(--red); }
+.file-list li.drop-after { box-shadow: 4px 0 0 -1px var(--red); }
 .remove-all { margin-top: 12px; }
 .badge { font-family: var(--f-mono); font-size: 11px; font-weight: 700; background: var(--th); border-radius: 4px 9px 4px 8px; padding: 1px 6px; }
 
@@ -418,6 +422,8 @@ mark.mk { background: var(--marker-a); color: inherit; padding: 0 6px; border-ra
 :root[data-theme='clean'] .file-list li.active { border-color: var(--accent); background: var(--accent-soft); }
 :root[data-theme='clean'] .file-list button { font-size: 14px; padding: 6px 10px; border-radius: 8px; }
 :root[data-theme='clean'] .file-rm { color: var(--muted); }
+:root[data-theme='clean'] .file-list li.drop-before { box-shadow: -4px 0 0 -1px var(--accent); }
+:root[data-theme='clean'] .file-list li.drop-after { box-shadow: 4px 0 0 -1px var(--accent); }
 :root[data-theme='clean'] .badge { font-size: 10.5px; border-radius: 4px; padding: 1px 5px; }
 
 :root[data-theme='clean'] .fields label, :root[data-theme='clean'] .map-grid label { font-size: 13px; font-weight: 500; gap: 4px; }
