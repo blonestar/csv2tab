@@ -662,6 +662,25 @@ function renderEdgeTable() {
     )
     .join('');
   $('edge-table').innerHTML = `<table class="edge-table"><tbody>${rows}</tbody></table>`;
+  fitConvertCard();
+}
+
+/** Otvorena tabela kantova ne staje u karticu 3: kartica se privremeno širi preko susedne, raspored se ne menja. */
+function fitConvertCard() {
+  const card = $('convert');
+  card.classList.remove('overlay');
+  card.style.width = card.style.marginLeft = '';
+  const wrap = $('edge-table');
+  if (!($('edge-details') as HTMLDetailsElement).open || card.hidden) return;
+  const extra = wrap.scrollWidth - wrap.clientWidth;
+  if (extra <= 0) return;
+  const grid = card.parentElement!.getBoundingClientRect();
+  const cell = card.getBoundingClientRect();
+  const w = Math.min(cell.width + extra + 2, grid.width);
+  if (w <= cell.width) return;
+  card.style.width = `${w}px`;
+  if (cell.left + w > grid.right) card.style.marginLeft = `${grid.right - w - cell.left}px`; // poslednja kolona: širi se ulevo
+  card.classList.add('overlay');
 }
 
 function codeOptions(code: number): string {
@@ -1243,6 +1262,8 @@ function init() {
     }
     rulesChanged();
   });
+  $('edge-details').addEventListener('toggle', fitConvertCard);
+  window.addEventListener('resize', fitConvertCard);
   $('edge-table').addEventListener('click', (e) => {
     const d = (e.target as HTMLElement).closest<HTMLElement>('[data-del]');
     if (!d) return;

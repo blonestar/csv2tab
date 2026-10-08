@@ -329,7 +329,8 @@ details.card > summary { margin: 0; }
 .sum { margin: 6px 0 10px; }
 
 /* tabela kantova */
-.grid > #convert:has(#edge-details[open]) { grid-column: 1 / -1; } /* otvorena tabela zauzima ceo red, korak 4 ide ispod */
+/* dok je tabela otvorena, kartica 3 se privremeno širi preko susedne (širinu računa fitConvertCard u main.ts) */
+.card.overlay { z-index: 5; background: var(--paper-hi); }
 #edge-table { overflow-x: auto; }
 .edge-table { border-collapse: collapse; margin: 8px 0; }
 .edge-table td { padding: 2px 6px; font-family: var(--f-mono); white-space: nowrap; }
