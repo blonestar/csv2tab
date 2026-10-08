@@ -8,8 +8,14 @@
 export type Mode = 'system' | 'light' | 'dark';
 export type Scheme = 'light' | 'dark';
 
-/** Nova tema: dodaj je ovde i napiši njene promenljive u style.css. */
-export const THEMES = [{ id: 'sketch', label: 'Skica' }] as const;
+/**
+ * Nova tema: dodaj je ovde i napiši njene promenljive u style.css.
+ * frames: da li rough.js crta ručne okvire (data-rough). Logo, ikone i skica toka se crtaju u svim temama.
+ */
+export const THEMES = [
+  { id: 'sketch', label: 'Skica', frames: true },
+  { id: 'clean', label: 'Pregledna', frames: false },
+] as const;
 export type ThemeId = (typeof THEMES)[number]['id'];
 
 const MODES: { id: Mode; label: string; title: string }[] = [
@@ -48,6 +54,11 @@ function save() {
   } catch {
     /* ništa */
   }
+}
+
+/** Da li aktivna tema traži skicirane okvire oko kartica, dugmadi i oznaka. */
+export function themeFrames(): boolean {
+  return THEMES.find((t) => t.id === pref.theme)?.frames ?? true;
 }
 
 export function currentScheme(): Scheme {

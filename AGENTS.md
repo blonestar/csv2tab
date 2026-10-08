@@ -14,7 +14,11 @@
   promenljive, bez fiksnih boja i bez `prefers-color-scheme`.
 - Nova tema: dodaj je u `THEMES` u `src/theme.ts` i napiši njena dva bloka promenljivih. Izbor teme u headeru se
   prikazuje sam čim postoji više od jedne teme.
-- Postojeće teme: `sketch` („Skica“). Svetla varijanta je reciklirani papir, a tamna je blueprint.
+- Postojeće teme:
+  - `sketch` („Skica“, podrazumevana): svetla varijanta je reciklirani papir, a tamna je blueprint.
+  - `clean` („Pregledna“): sistemski font, bele/tamne kartice, plavi akcenat. Okvire ne crta rough.js
+    (`frames: false` u `THEMES`), pa su oblici u bloku `:root[data-theme='clean'] …` na kraju `src/style.css`.
+    Logo, skica toka i ikone (lokot) ostaju isti u svim temama.
 
 ## Verzija (SemVer)
 

@@ -1,5 +1,5 @@
 import rough from 'roughjs';
-import { THEME_EVENT } from './theme';
+import { THEME_EVENT, themeFrames } from './theme';
 
 /**
  * "Sketch" sloj: rough.js crta ručne okvire iza elemenata sa data-rough atributom
@@ -52,6 +52,10 @@ function getSvg(el: HTMLElement, w: number, h: number, padX: number, padY: numbe
 }
 
 function draw(el: HTMLElement) {
+  if (!themeFrames()) {
+    el.querySelector(':scope > svg.rough')?.remove();
+    return;
+  }
   const w = el.offsetWidth;
   const h = el.offsetHeight;
   if (!w || !h) return;
