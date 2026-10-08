@@ -18,7 +18,7 @@
   - `sketch` („Skica“, podrazumevana): svetla varijanta je reciklirani papir, a tamna je blueprint.
   - `clean` („Pregledna“): sistemski font, bele/tamne kartice, plavi akcenat. Okvire ne crta rough.js
     (`frames: false` u `THEMES`), pa su oblici u bloku `:root[data-theme='clean'] …` na kraju `src/style.css`.
-    Logo, skica toka i ikone (lokot) ostaju isti u svim temama.
+    Logo, skica toka i ikone ostaju isti u svim temama.
 
 ## Verzija (SemVer)
 
