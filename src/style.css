@@ -175,13 +175,9 @@ h2 { margin: 0 0 10px; font-size: 30px; line-height: 1.1; display: flex; align-i
   font-size: 24px; transform: rotate(-6deg);
 }
 
-.flow { width: 100%; max-width: 640px; height: auto; display: block; margin: 4px 0 0; overflow: visible; }
+.flow { width: 100%; max-width: 640px; height: auto; display: block; margin: 4px 0 20px; overflow: visible; }
 .flow-label { font-family: var(--f-hand); font-size: 30px; font-weight: 700; fill: #24242c; }
 .flow-note { font-family: var(--f-hand); font-size: 24px; fill: var(--red); }
-.privacy {
-  margin: 8px 0 20px; padding: 10px 14px; display: flex; gap: 10px; align-items: center;
-  max-width: 760px; background: color-mix(in srgb, var(--paper-hi) 80%, transparent);
-}
 .icon { flex: none; }
 
 /* skicirani elementi: rough.js crta okvir iza sadržaja */
@@ -393,11 +389,10 @@ mark.mk { background: var(--marker-a); color: inherit; padding: 0 6px; border-ra
   border: 0; border-radius: 50%; background: var(--accent); color: var(--on-primary);
 }
 
-:root[data-theme='clean'] .card, :root[data-theme='clean'] .privacy {
+:root[data-theme='clean'] .card {
   background: var(--paper-hi); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow);
 }
 :root[data-theme='clean'] .card { padding: 20px 22px; }
-:root[data-theme='clean'] .privacy { font-size: 14px; padding: 10px 14px; margin-bottom: 22px; }
 
 :root[data-theme='clean'] .dropzone { border: 2px dashed var(--border); border-radius: var(--radius); background: var(--paper); padding: 28px; }
 :root[data-theme='clean'] .dropzone:hover, :root[data-theme='clean'] .dropzone:focus-visible, :root[data-theme='clean'] .dropzone.over { background: var(--accent-soft); border-color: var(--accent); }
